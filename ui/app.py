@@ -708,6 +708,7 @@ def main() -> None:
         h1,h2,h3 {color:#142A43; letter-spacing:-.025em;}
         [data-testid="stMetricValue"] {font-size:1.7rem;}
         [data-testid="stCaptionContainer"], [data-testid="stCaptionContainer"] p, [data-testid="stCaption"], [data-testid="stCaption"] p, .stCaption, .stCaption p {color:#52647A !important;}
+        [data-testid="stCaptionContainer"], [data-testid="stCaption"], .stCaption {opacity:1 !important;}
         div[data-testid="stForm"] {background:#FFFFFF;}
         div[data-testid="stVerticalBlockBorderWrapper"]>div {border-radius:12px;}
         .tl-kicker {color:#16766F; font-size:.76rem; font-weight:700; letter-spacing:.14em; margin:0 0 .25rem;}

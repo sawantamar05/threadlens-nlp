@@ -1,0 +1,5162 @@
+{
+  "generated_at": "2026-10-24T20:20:33.819580+00:00",
+  "dataset": {
+    "comment_count": 720,
+    "thread_count": 36,
+    "label_counts": {
+      "request": 54,
+      "commentary": 460,
+      "analysis": 206
+    },
+    "provenance": "weak_label",
+    "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8"
+  },
+  "splits": {
+    "train": {
+      "comment_ids": [
+        47341268,
+        47343297,
+        47347360,
+        47345193,
+        47341044,
+        47342004,
+        47341269,
+        47340451,
+        47359789,
+        47341237,
+        47341557,
+        47340569,
+        47341423,
+        47349340,
+        47343993,
+        47343118,
+        47342043,
+        47341249,
+        47342184,
+        47346506,
+        39526321,
+        39526367,
+        39528004,
+        39534869,
+        39537829,
+        39526993,
+        39526180,
+        39526983,
+        39528317,
+        39527442,
+        39526407,
+        39527796,
+        39529187,
+        39528025,
+        39529568,
+        39532792,
+        39530315,
+        39535776,
+        39537036,
+        39527994,
+        41053424,
+        41050323,
+        41047141,
+        41048093,
+        41048689,
+        41049784,
+        41048452,
+        41048477,
+        41047277,
+        41055147,
+        41047149,
+        41047725,
+        41048203,
+        41051609,
+        41047270,
+        41049440,
+        41047266,
+        41048405,
+        41047646,
+        41047124,
+        44165768,
+        44165114,
+        44168771,
+        44167275,
+        44163268,
+        44167562,
+        44168119,
+        44172669,
+        44163526,
+        44165445,
+        44164462,
+        44163199,
+        44169131,
+        44166388,
+        44165455,
+        44164238,
+        44164076,
+        44170919,
+        44164955,
+        44163092,
+        38549870,
+        38552557,
+        38552840,
+        38551886,
+        38545010,
+        38549028,
+        38549473,
+        38545971,
+        38547301,
+        38549166,
+        38546084,
+        38545001,
+        38546559,
+        38547662,
+        38548056,
+        38552180,
+        38547791,
+        38544951,
+        38545663,
+        38545429,
+        48153973,
+        48156405,
+        48156778,
+        48158754,
+        48154180,
+        48163035,
+        48159305,
+        48154950,
+        48153838,
+        48156141,
+        48157806,
+        48156972,
+        48161936,
+        48154510,
+        48153820,
+        48153932,
+        48156803,
+        48162327,
+        48167415,
+        48160539,
+        47185223,
+        47144404,
+        47145299,
+        47148546,
+        47136766,
+        47137953,
+        47142419,
+        47142622,
+        47147384,
+        47136869,
+        47163637,
+        47163790,
+        47142429,
+        47136320,
+        47144892,
+        47146553,
+        47145257,
+        47143292,
+        47149232,
+        47143329,
+        48090984,
+        48088398,
+        48093532,
+        48087885,
+        48087807,
+        48087467,
+        48087511,
+        48090574,
+        48091641,
+        48092406,
+        48094194,
+        48087966,
+        48106911,
+        48090505,
+        48088433,
+        48089133,
+        48087171,
+        48088708,
+        48085972,
+        48087400,
+        49765338,
+        49765461,
+        49765127,
+        49771068,
+        49767714,
+        49768510,
+        49765670,
+        49769810,
+        49769347,
+        49770366,
+        49766839,
+        49767109,
+        49766082,
+        49765368,
+        49765548,
+        49765428,
+        49768595,
+        49765129,
+        49765078,
+        49780577,
+        17023328,
+        17025966,
+        17024011,
+        17024389,
+        17024648,
+        17023417,
+        17027265,
+        17027278,
+        17024202,
+        17027017,
+        17028105,
+        17039384,
+        17025538,
+        17024663,
+        17025429,
+        17033424,
+        17033464,
+        17024649,
+        17037536,
+        17037428,
+        48023488,
+        48028554,
+        48036403,
+        48019891,
+        48024756,
+        48019456,
+        48019444,
+        48023200,
+        48019492,
+        48024084,
+        48020209,
+        48026209,
+        48019763,
+        48028860,
+        48028471,
+        48029681,
+        48042483,
+        48022268,
+        48025465,
+        48019711,
+        18250036,
+        18250709,
+        18250996,
+        18258653,
+        18253217,
+        18251490,
+        18253373,
+        18250426,
+        18250242,
+        18251377,
+        18252613,
+        18251723,
+        18274757,
+        18251146,
+        18250283,
+        18252044,
+        18251363,
+        18253306,
+        18251910,
+        18250892,
+        44981388,
+        44972547,
+        44973238,
+        44974117,
+        44973922,
+        44972551,
+        44987433,
+        44983203,
+        44973182,
+        44973029,
+        44976013,
+        44984870,
+        44973286,
+        44982913,
+        44978929,
+        44973581,
+        44972645,
+        44976681,
+        44973146,
+        44981837,
+        42924399,
+        42933194,
+        42923433,
+        42930371,
+        42929157,
+        42925909,
+        42911859,
+        42922281,
+        42923376,
+        42923579,
+        42922073,
+        42922908,
+        42930860,
+        42913550,
+        42929476,
+        42936237,
+        42924891,
+        42911025,
+        42927967,
+        42938944,
+        48512798,
+        48514862,
+        48512506,
+        48512644,
+        48514771,
+        48514192,
+        48513599,
+        48517488,
+        48515861,
+        48516967,
+        48512904,
+        48512129,
+        48516693,
+        48512311,
+        48512971,
+        48517863,
+        48514266,
+        48512745,
+        48513749,
+        48514126,
+        37027698,
+        37021980,
+        37024594,
+        37022155,
+        37023877,
+        37028405,
+        37021851,
+        37025562,
+        37027881,
+        37022255,
+        37026902,
+        37031892,
+        37022353,
+        37024158,
+        37022116,
+        37022102,
+        37022187,
+        37032539,
+        37023402,
+        37022874,
+        15892255,
+        15894759,
+        15892539,
+        15896407,
+        15897694,
+        15893093,
+        15893804,
+        15893649,
+        15895688,
+        15893262,
+        15893265,
+        15894382,
+        15892962,
+        15898226,
+        15894451,
+        15894245,
+        15893099,
+        15893089,
+        15892443,
+        15893120,
+        47367186,
+        47377182,
+        47371291,
+        47372505,
+        47385341,
+        47371274,
+        47368057,
+        47371229,
+        47371751,
+        47372511,
+        47372114,
+        47368661,
+        47367645,
+        47369280,
+        47370237,
+        47368311,
+        47366454,
+        47374911,
+        47372424,
+        47373268,
+        31819766,
+        31822766,
+        31812890,
+        31813509,
+        31815212,
+        31812558,
+        31812485,
+        31814527,
+        31817170,
+        31819009,
+        31812845,
+        31812789,
+        31813107,
+        31812955,
+        31816934,
+        31812649,
+        31812956,
+        31813244,
+        31815205,
+        31813086,
+        47230838,
+        47228475,
+        47227602,
+        47226290,
+        47225835,
+        47231866,
+        47231662,
+        47230160,
+        47225517,
+        47225575,
+        47225380,
+        47225913,
+        47226944,
+        47236122,
+        47225345,
+        47230793,
+        47314381,
+        47232111,
+        47228215,
+        47225279,
+        45941971,
+        45942929,
+        45943951,
+        45945059,
+        45943491,
+        45966129,
+        45944193,
+        45943129,
+        45943106,
+        45942632,
+        45942723,
+        45949229,
+        45942072,
+        45942516,
+        45943946,
+        45942451,
+        45942414,
+        45942294,
+        45942078,
+        45943639,
+        6832853,
+        6831047,
+        6831251,
+        6830776,
+        6831161,
+        6831093,
+        6830700,
+        6830638,
+        6830677,
+        6833141,
+        6831032,
+        6831429,
+        6830727,
+        6831560,
+        6834969,
+        6831594,
+        6831214,
+        6832596,
+        6833148,
+        6832635,
+        45931724,
+        45931180,
+        45932029,
+        45930560,
+        45932166,
+        45932663,
+        45931527,
+        45930517,
+        45934122,
+        45935945,
+        45931777,
+        45935233,
+        45931463,
+        45932000,
+        45930920,
+        45931253,
+        45930602,
+        45932440,
+        45930964,
+        45932320,
+        41077529,
+        41074923,
+        41071573,
+        41071613,
+        41071872,
+        41073929,
+        41072217,
+        41078764,
+        41071366,
+        41076334,
+        41074572,
+        41074346,
+        41072736,
+        41071700,
+        41071771,
+        41070828,
+        41070089,
+        41080291,
+        41071394,
+        41073596,
+        49068845,
+        49066041,
+        49064867,
+        49064076,
+        49068758,
+        49064881,
+        49067907,
+        49065548,
+        49066080,
+        49071562,
+        49064210,
+        49075823,
+        49065131,
+        49065599,
+        49067017,
+        49064705,
+        49065753,
+        49064041,
+        49067119,
+        49072987
+      ],
+      "thread_ids": [
+        6830566,
+        15892066,
+        17022963,
+        18249755,
+        31812259,
+        37021160,
+        38544729,
+        39526057,
+        41046773,
+        41069829,
+        42910910,
+        44163063,
+        44972151,
+        45930151,
+        45941596,
+        47136179,
+        47225130,
+        47340079,
+        47363754,
+        48019219,
+        48085821,
+        48153379,
+        48511908,
+        49063022,
+        49764791
+      ],
+      "count": 500,
+      "label_counts": {
+        "request": 42,
+        "commentary": 318,
+        "analysis": 140
+      }
+    },
+    "validation": {
+      "comment_ids": [
+        46992529,
+        46991484,
+        46991944,
+        47004672,
+        46994912,
+        46992756,
+        46996574,
+        46991378,
+        46991046,
+        46993326,
+        46998338,
+        46992391,
+        46991836,
+        47002359,
+        47004133,
+        46992123,
+        46990912,
+        46992380,
+        46991219,
+        46991899,
+        48292508,
+        48296537,
+        48296293,
+        48293929,
+        48296961,
+        48297558,
+        48292507,
+        48293520,
+        48296531,
+        48296094,
+        48295783,
+        48294231,
+        48296887,
+        48296328,
+        48292976,
+        48293156,
+        48292472,
+        48293719,
+        48294551,
+        48293356,
+        41398489,
+        41397912,
+        41406263,
+        41396384,
+        41395807,
+        41393084,
+        41392856,
+        41396793,
+        41395565,
+        41405496,
+        41393317,
+        41394104,
+        41395690,
+        41394164,
+        41394644,
+        41394921,
+        41396435,
+        41402845,
+        41396807,
+        41395799,
+        47686233,
+        47679276,
+        47690125,
+        47688452,
+        47681901,
+        47685780,
+        47686366,
+        47685607,
+        47680067,
+        47680503,
+        47686020,
+        47679450,
+        47689809,
+        47680311,
+        47686075,
+        47679397,
+        47680782,
+        47685847,
+        47692669,
+        47687011,
+        44317677,
+        44315460,
+        44324130,
+        44314794,
+        44319143,
+        44323589,
+        44315438,
+        44315505,
+        44325540,
+        44315062,
+        44356556,
+        44314933,
+        44338774,
+        44316568,
+        44331233,
+        44327411,
+        44323157,
+        44326660,
+        44322896,
+        44317512
+      ],
+      "thread_ids": [
+        41392128,
+        44314423,
+        46990729,
+        47679121,
+        48292224
+      ],
+      "count": 100,
+      "label_counts": {
+        "analysis": 28,
+        "commentary": 68,
+        "request": 4
+      }
+    },
+    "test": {
+      "comment_ids": [
+        41387108,
+        41387253,
+        41386886,
+        41391644,
+        41387147,
+        41387208,
+        41387903,
+        41388522,
+        41387934,
+        41392778,
+        41386806,
+        41387623,
+        41386793,
+        41387200,
+        41386690,
+        41386652,
+        41387015,
+        41387405,
+        41386657,
+        41392496,
+        44397103,
+        44397323,
+        44396574,
+        44398358,
+        44398382,
+        44398450,
+        44396873,
+        44399674,
+        44399387,
+        44401069,
+        44397018,
+        44396935,
+        44396685,
+        44396713,
+        44398116,
+        44399621,
+        44396694,
+        44396904,
+        44396761,
+        44399192,
+        48501335,
+        48500788,
+        48501172,
+        48503564,
+        48502688,
+        48500766,
+        48500369,
+        48500628,
+        48507213,
+        48502548,
+        48504008,
+        48501045,
+        48500768,
+        48500875,
+        48503548,
+        48501289,
+        48503664,
+        48501314,
+        48501774,
+        48502610,
+        39927511,
+        39917963,
+        39918010,
+        39920851,
+        39919421,
+        39919418,
+        39918182,
+        39918664,
+        39922705,
+        39922395,
+        39919431,
+        39919425,
+        39918697,
+        39918774,
+        39927860,
+        39918519,
+        39920320,
+        39918828,
+        39922089,
+        39928865,
+        49989834,
+        49985330,
+        49987682,
+        49994456,
+        49985635,
+        49987652,
+        49986857,
+        49990198,
+        49988271,
+        49987894,
+        49985733,
+        49985902,
+        49993209,
+        49998652,
+        49985114,
+        49996193,
+        49987870,
+        49987367,
+        49985941,
+        49988780,
+        40768901,
+        40768853,
+        40768383,
+        40770877,
+        40768553,
+        40768355,
+        40768334,
+        40768537,
+        40768372,
+        40768001,
+        40778484,
+        40777866,
+        40789442,
+        40774414,
+        40773600,
+        40773370,
+        40768825,
+        40768009,
+        40791220,
+        40773625
+      ],
+      "thread_ids": [
+        39918245,
+        40767459,
+        41386319,
+        44396518,
+        48500012,
+        49984923
+      ],
+      "count": 120,
+      "label_counts": {
+        "commentary": 74,
+        "request": 8,
+        "analysis": 38
+      }
+    }
+  },
+  "runs": [
+    {
+      "model_id": "majority-seed42",
+      "configuration": "majority",
+      "seed": 42,
+      "training_duration_seconds": 0.04750100011005998,
+      "metadata": {
+        "model_id": "majority-seed42",
+        "artifact_identifier": "majority-seed42-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:52.935911+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "cpu",
+        "training_config": {
+          "seed": 42,
+          "preprocessing_fit": "training partition only",
+          "max_length": null,
+          "classifier": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+          },
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "min_df": 2,
+            "max_features": 30000,
+            "sublinear_tf": true
+          }
+        },
+        "max_length": null,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "training_duration_seconds": 0.04750100011005998,
+        "display_name": "Majority class"
+      },
+      "validation": {
+        "accuracy": 0.68,
+        "macro_f1": 0.2698412698412698,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.68,
+            "recall": 1.0,
+            "f1-score": 0.8095238095238095,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            68
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 100
+        }
+      },
+      "test": {
+        "accuracy": 0.6166666666666667,
+        "macro_f1": 0.2542955326460481,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6166666666666667,
+            "recall": 1.0,
+            "f1-score": 0.7628865979381443,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            38
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            74
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 120
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 0.23718331940472126,
+        "p50_ms": 0.22641662508249283,
+        "p95_ms": 0.3003816935233772,
+        "sample_count": 20,
+        "device": "cpu",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "majority-seed7",
+      "configuration": "majority",
+      "seed": 7,
+      "training_duration_seconds": 0.027919083135202527,
+      "metadata": {
+        "model_id": "majority-seed7",
+        "artifact_identifier": "majority-seed7-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:53.041664+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "cpu",
+        "training_config": {
+          "seed": 7,
+          "preprocessing_fit": "training partition only",
+          "max_length": null,
+          "classifier": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+          },
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "min_df": 2,
+            "max_features": 30000,
+            "sublinear_tf": true
+          }
+        },
+        "max_length": null,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "training_duration_seconds": 0.027919083135202527,
+        "display_name": "Majority class"
+      },
+      "validation": {
+        "accuracy": 0.68,
+        "macro_f1": 0.2698412698412698,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.68,
+            "recall": 1.0,
+            "f1-score": 0.8095238095238095,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            68
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 100
+        }
+      },
+      "test": {
+        "accuracy": 0.6166666666666667,
+        "macro_f1": 0.2542955326460481,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6166666666666667,
+            "recall": 1.0,
+            "f1-score": 0.7628865979381443,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            38
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            74
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 120
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 0.23890635930001736,
+        "p50_ms": 0.23035402409732342,
+        "p95_ms": 0.3003045101650059,
+        "sample_count": 20,
+        "device": "cpu",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "majority-seed2024",
+      "configuration": "majority",
+      "seed": 2024,
+      "training_duration_seconds": 0.02880562492646277,
+      "metadata": {
+        "model_id": "majority-seed2024",
+        "artifact_identifier": "majority-seed2024-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:53.134522+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "cpu",
+        "training_config": {
+          "seed": 2024,
+          "preprocessing_fit": "training partition only",
+          "max_length": null,
+          "classifier": {
+            "constant": null,
+            "random_state": null,
+            "strategy": "most_frequent"
+          },
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "min_df": 2,
+            "max_features": 30000,
+            "sublinear_tf": true
+          }
+        },
+        "max_length": null,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "training_duration_seconds": 0.02880562492646277,
+        "display_name": "Majority class"
+      },
+      "validation": {
+        "accuracy": 0.68,
+        "macro_f1": 0.2698412698412698,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.68,
+            "recall": 1.0,
+            "f1-score": 0.8095238095238095,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            68
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 100
+        }
+      },
+      "test": {
+        "accuracy": 0.6166666666666667,
+        "macro_f1": 0.2542955326460481,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6166666666666667,
+            "recall": 1.0,
+            "f1-score": 0.7628865979381443,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            38
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            74
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 120
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 0.24422496790066361,
+        "p50_ms": 0.23808353580534458,
+        "p95_ms": 0.3096101456321776,
+        "sample_count": 20,
+        "device": "cpu",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "tfidf-seed42",
+      "configuration": "tfidf",
+      "seed": 42,
+      "training_duration_seconds": 0.0510319578461349,
+      "metadata": {
+        "model_id": "tfidf-seed42",
+        "artifact_identifier": "tfidf-seed42-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:53.227971+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "cpu",
+        "training_config": {
+          "seed": 42,
+          "preprocessing_fit": "training partition only",
+          "max_length": null,
+          "classifier": {
+            "C": 2.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": "deprecated",
+            "random_state": 42,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+          },
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "min_df": 2,
+            "max_features": 30000,
+            "sublinear_tf": true
+          }
+        },
+        "max_length": null,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "training_duration_seconds": 0.0510319578461349,
+        "display_name": "TF-IDF + logistic regression"
+      },
+      "validation": {
+        "accuracy": 0.67,
+        "macro_f1": 0.26746506986027946,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.6767676767676768,
+            "recall": 0.9852941176470589,
+            "f1-score": 0.8023952095808383,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            67
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 1,
+          "request": 0,
+          "commentary": 99
+        }
+      },
+      "test": {
+        "accuracy": 0.65,
+        "macro_f1": 0.3346228239845261,
+        "per_label": {
+          "analysis": {
+            "precision": 0.8333333333333334,
+            "recall": 0.13157894736842105,
+            "f1-score": 0.22727272727272727,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6403508771929824,
+            "recall": 0.9864864864864865,
+            "f1-score": 0.776595744680851,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            33
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            1,
+            0,
+            73
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 6,
+          "request": 0,
+          "commentary": 114
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 0.312693789601326,
+        "p50_ms": 0.30462490394711494,
+        "p95_ms": 0.3786369343288243,
+        "sample_count": 20,
+        "device": "cpu",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "tfidf-seed7",
+      "configuration": "tfidf",
+      "seed": 7,
+      "training_duration_seconds": 0.048558666836470366,
+      "metadata": {
+        "model_id": "tfidf-seed7",
+        "artifact_identifier": "tfidf-seed7-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:53.356191+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "cpu",
+        "training_config": {
+          "seed": 7,
+          "preprocessing_fit": "training partition only",
+          "max_length": null,
+          "classifier": {
+            "C": 2.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": "deprecated",
+            "random_state": 7,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+          },
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "min_df": 2,
+            "max_features": 30000,
+            "sublinear_tf": true
+          }
+        },
+        "max_length": null,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "training_duration_seconds": 0.048558666836470366,
+        "display_name": "TF-IDF + logistic regression"
+      },
+      "validation": {
+        "accuracy": 0.67,
+        "macro_f1": 0.26746506986027946,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.6767676767676768,
+            "recall": 0.9852941176470589,
+            "f1-score": 0.8023952095808383,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            67
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 1,
+          "request": 0,
+          "commentary": 99
+        }
+      },
+      "test": {
+        "accuracy": 0.65,
+        "macro_f1": 0.3346228239845261,
+        "per_label": {
+          "analysis": {
+            "precision": 0.8333333333333334,
+            "recall": 0.13157894736842105,
+            "f1-score": 0.22727272727272727,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6403508771929824,
+            "recall": 0.9864864864864865,
+            "f1-score": 0.776595744680851,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            33
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            1,
+            0,
+            73
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 6,
+          "request": 0,
+          "commentary": 114
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 0.32108540181070566,
+        "p50_ms": 0.31037500593811274,
+        "p95_ms": 0.4065836197696626,
+        "sample_count": 20,
+        "device": "cpu",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "tfidf-seed2024",
+      "configuration": "tfidf",
+      "seed": 2024,
+      "training_duration_seconds": 0.04914016695693135,
+      "metadata": {
+        "model_id": "tfidf-seed2024",
+        "artifact_identifier": "tfidf-seed2024-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:53.449633+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "cpu",
+        "training_config": {
+          "seed": 2024,
+          "preprocessing_fit": "training partition only",
+          "max_length": null,
+          "classifier": {
+            "C": 2.0,
+            "class_weight": null,
+            "dual": false,
+            "fit_intercept": true,
+            "intercept_scaling": 1,
+            "l1_ratio": 0.0,
+            "max_iter": 1000,
+            "n_jobs": null,
+            "penalty": "deprecated",
+            "random_state": 2024,
+            "solver": "lbfgs",
+            "tol": 0.0001,
+            "verbose": 0,
+            "warm_start": false
+          },
+          "tfidf": {
+            "ngram_range": [
+              1,
+              2
+            ],
+            "min_df": 2,
+            "max_features": 30000,
+            "sublinear_tf": true
+          }
+        },
+        "max_length": null,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "training_duration_seconds": 0.04914016695693135,
+        "display_name": "TF-IDF + logistic regression"
+      },
+      "validation": {
+        "accuracy": 0.67,
+        "macro_f1": 0.26746506986027946,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.6767676767676768,
+            "recall": 0.9852941176470589,
+            "f1-score": 0.8023952095808383,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            1,
+            0,
+            67
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 1,
+          "request": 0,
+          "commentary": 99
+        }
+      },
+      "test": {
+        "accuracy": 0.65,
+        "macro_f1": 0.3346228239845261,
+        "per_label": {
+          "analysis": {
+            "precision": 0.8333333333333334,
+            "recall": 0.13157894736842105,
+            "f1-score": 0.22727272727272727,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6403508771929824,
+            "recall": 0.9864864864864865,
+            "f1-score": 0.776595744680851,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            5,
+            0,
+            33
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            1,
+            0,
+            73
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 6,
+          "request": 0,
+          "commentary": 114
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 0.31576871406286955,
+        "p50_ms": 0.30687497928738594,
+        "p95_ms": 0.3917432273738086,
+        "sample_count": 20,
+        "device": "cpu",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "distilbert-original-seed42",
+      "configuration": "distilbert-original",
+      "seed": 42,
+      "training_duration_seconds": 78.28608995908871,
+      "metadata": {
+        "model_id": "distilbert-original-seed42",
+        "artifact_identifier": "distilbert-original-seed42-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:08:55.477315+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "mps",
+        "training_config": {
+          "seed": 42,
+          "epochs": 3,
+          "learning_rate": 2e-05,
+          "batch_size": 16,
+          "max_length": 256,
+          "dynamic_padding": true,
+          "class_weighted_loss": false,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.1,
+          "gradient_clip_norm": 1.0,
+          "checkpoint_selection": "highest validation macro F1, earliest epoch wins ties",
+          "base_model": "distilbert/distilbert-base-uncased",
+          "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+          "base_license": "apache-2.0",
+          "randomness": "Training seeds vary initialization, dropout, shuffle on fixed thread partitions; MPS kernels are not guaranteed bitwise deterministic."
+        },
+        "max_length": 256,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "display_name": "DistilBERT 3 epochs",
+        "selected_epoch": 3,
+        "training_duration_seconds": 78.28608995908871,
+        "truncation_counts": {
+          "train": 18,
+          "validation": 5,
+          "test": 3
+        },
+        "class_weights": null,
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "train_loss": 0.9348377957940102,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          },
+          {
+            "epoch": 2,
+            "train_loss": 0.8307028207927942,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          },
+          {
+            "epoch": 3,
+            "train_loss": 0.7566593708470464,
+            "validation": {
+              "accuracy": 0.7,
+              "macro_f1": 0.31753681392235605,
+              "per_label": {
+                "analysis": {
+                  "precision": 1.0,
+                  "recall": 0.07142857142857142,
+                  "f1-score": 0.13333333333333333,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.6938775510204082,
+                  "recall": 1.0,
+                  "f1-score": 0.8192771084337349,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  2,
+                  0,
+                  26
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 2,
+                "request": 0,
+                "commentary": 98
+              }
+            }
+          }
+        ]
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9348377957940102,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8307028207927942,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.7566593708470464,
+          "validation": {
+            "accuracy": 0.7,
+            "macro_f1": 0.31753681392235605,
+            "per_label": {
+              "analysis": {
+                "precision": 1.0,
+                "recall": 0.07142857142857142,
+                "f1-score": 0.13333333333333333,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.6938775510204082,
+                "recall": 1.0,
+                "f1-score": 0.8192771084337349,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                2,
+                0,
+                26
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 2,
+              "request": 0,
+              "commentary": 98
+            }
+          }
+        }
+      ],
+      "validation": {
+        "accuracy": 0.7,
+        "macro_f1": 0.31753681392235605,
+        "per_label": {
+          "analysis": {
+            "precision": 1.0,
+            "recall": 0.07142857142857142,
+            "f1-score": 0.13333333333333333,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.6938775510204082,
+            "recall": 1.0,
+            "f1-score": 0.8192771084337349,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            26
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            68
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 2,
+          "request": 0,
+          "commentary": 98
+        }
+      },
+      "test": {
+        "accuracy": 0.625,
+        "macro_f1": 0.27361111111111114,
+        "per_label": {
+          "analysis": {
+            "precision": 0.5,
+            "recall": 0.02631578947368421,
+            "f1-score": 0.05,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6271186440677966,
+            "recall": 1.0,
+            "f1-score": 0.7708333333333334,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            37
+          ],
+          [
+            1,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            74
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 2,
+          "request": 0,
+          "commentary": 118
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 11.099333222955465,
+        "p50_ms": 10.589375626295805,
+        "p95_ms": 18.72661462984979,
+        "sample_count": 20,
+        "device": "mps",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      },
+      "reload_verified": true
+    },
+    {
+      "model_id": "distilbert-original-seed7",
+      "configuration": "distilbert-original",
+      "seed": 7,
+      "training_duration_seconds": 93.58581112511456,
+      "metadata": {
+        "model_id": "distilbert-original-seed7",
+        "artifact_identifier": "distilbert-original-seed7-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:10:18.833180+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "mps",
+        "training_config": {
+          "seed": 7,
+          "epochs": 3,
+          "learning_rate": 2e-05,
+          "batch_size": 16,
+          "max_length": 256,
+          "dynamic_padding": true,
+          "class_weighted_loss": false,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.1,
+          "gradient_clip_norm": 1.0,
+          "checkpoint_selection": "highest validation macro F1, earliest epoch wins ties",
+          "base_model": "distilbert/distilbert-base-uncased",
+          "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+          "base_license": "apache-2.0",
+          "randomness": "Training seeds vary initialization, dropout, shuffle on fixed thread partitions; MPS kernels are not guaranteed bitwise deterministic."
+        },
+        "max_length": 256,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "display_name": "DistilBERT 3 epochs",
+        "selected_epoch": 3,
+        "training_duration_seconds": 93.58581112511456,
+        "truncation_counts": {
+          "train": 18,
+          "validation": 5,
+          "test": 3
+        },
+        "class_weights": null,
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "train_loss": 0.9856035597622395,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          },
+          {
+            "epoch": 2,
+            "train_loss": 0.8094512429088354,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          },
+          {
+            "epoch": 3,
+            "train_loss": 0.7321302341297269,
+            "validation": {
+              "accuracy": 0.7,
+              "macro_f1": 0.31753681392235605,
+              "per_label": {
+                "analysis": {
+                  "precision": 1.0,
+                  "recall": 0.07142857142857142,
+                  "f1-score": 0.13333333333333333,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.6938775510204082,
+                  "recall": 1.0,
+                  "f1-score": 0.8192771084337349,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  2,
+                  0,
+                  26
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 2,
+                "request": 0,
+                "commentary": 98
+              }
+            }
+          }
+        ]
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9856035597622395,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.8094512429088354,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.7321302341297269,
+          "validation": {
+            "accuracy": 0.7,
+            "macro_f1": 0.31753681392235605,
+            "per_label": {
+              "analysis": {
+                "precision": 1.0,
+                "recall": 0.07142857142857142,
+                "f1-score": 0.13333333333333333,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.6938775510204082,
+                "recall": 1.0,
+                "f1-score": 0.8192771084337349,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                2,
+                0,
+                26
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 2,
+              "request": 0,
+              "commentary": 98
+            }
+          }
+        }
+      ],
+      "validation": {
+        "accuracy": 0.7,
+        "macro_f1": 0.31753681392235605,
+        "per_label": {
+          "analysis": {
+            "precision": 1.0,
+            "recall": 0.07142857142857142,
+            "f1-score": 0.13333333333333333,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.6938775510204082,
+            "recall": 1.0,
+            "f1-score": 0.8192771084337349,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            26
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            68
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 2,
+          "request": 0,
+          "commentary": 98
+        }
+      },
+      "test": {
+        "accuracy": 0.6416666666666667,
+        "macro_f1": 0.30726817042606513,
+        "per_label": {
+          "analysis": {
+            "precision": 0.75,
+            "recall": 0.07894736842105263,
+            "f1-score": 0.14285714285714285,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6379310344827587,
+            "recall": 1.0,
+            "f1-score": 0.7789473684210526,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            35
+          ],
+          [
+            1,
+            0,
+            7
+          ],
+          [
+            0,
+            0,
+            74
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 4,
+          "request": 0,
+          "commentary": 116
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 12.481923087034374,
+        "p50_ms": 9.614833514206111,
+        "p95_ms": 22.15161100029947,
+        "sample_count": 20,
+        "device": "mps",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "distilbert-original-seed2024",
+      "configuration": "distilbert-original",
+      "seed": 2024,
+      "training_duration_seconds": 102.60364329186268,
+      "metadata": {
+        "model_id": "distilbert-original-seed2024",
+        "artifact_identifier": "distilbert-original-seed2024-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:11:58.739196+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "96c57ff46686f76b6dcf947ce19cd4fd8d84ec69",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "mps",
+        "training_config": {
+          "seed": 2024,
+          "epochs": 3,
+          "learning_rate": 2e-05,
+          "batch_size": 16,
+          "max_length": 256,
+          "dynamic_padding": true,
+          "class_weighted_loss": false,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.1,
+          "gradient_clip_norm": 1.0,
+          "checkpoint_selection": "highest validation macro F1, earliest epoch wins ties",
+          "base_model": "distilbert/distilbert-base-uncased",
+          "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+          "base_license": "apache-2.0",
+          "randomness": "Training seeds vary initialization, dropout, shuffle on fixed thread partitions; MPS kernels are not guaranteed bitwise deterministic."
+        },
+        "max_length": 256,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "display_name": "DistilBERT 3 epochs",
+        "selected_epoch": 1,
+        "training_duration_seconds": 102.60364329186268,
+        "truncation_counts": {
+          "train": 18,
+          "validation": 5,
+          "test": 3
+        },
+        "class_weights": null,
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "train_loss": 0.9371984470635653,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          },
+          {
+            "epoch": 2,
+            "train_loss": 0.7942980257794261,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          },
+          {
+            "epoch": 3,
+            "train_loss": 0.746784832328558,
+            "validation": {
+              "accuracy": 0.68,
+              "macro_f1": 0.2698412698412698,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.68,
+                  "recall": 1.0,
+                  "f1-score": 0.8095238095238095,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  0,
+                  0,
+                  28
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  0,
+                  0,
+                  68
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 0,
+                "request": 0,
+                "commentary": 100
+              }
+            }
+          }
+        ]
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 0.9371984470635653,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 0.7942980257794261,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.746784832328558,
+          "validation": {
+            "accuracy": 0.68,
+            "macro_f1": 0.2698412698412698,
+            "per_label": {
+              "analysis": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.68,
+                "recall": 1.0,
+                "f1-score": 0.8095238095238095,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                0,
+                0,
+                28
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                0,
+                0,
+                68
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 0,
+              "request": 0,
+              "commentary": 100
+            }
+          }
+        }
+      ],
+      "validation": {
+        "accuracy": 0.68,
+        "macro_f1": 0.2698412698412698,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.68,
+            "recall": 1.0,
+            "f1-score": 0.8095238095238095,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            28
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            68
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 100
+        }
+      },
+      "test": {
+        "accuracy": 0.6166666666666667,
+        "macro_f1": 0.2542955326460481,
+        "per_label": {
+          "analysis": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6166666666666667,
+            "recall": 1.0,
+            "f1-score": 0.7628865979381443,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            38
+          ],
+          [
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            74
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 0,
+          "request": 0,
+          "commentary": 120
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 18.888960464391857,
+        "p50_ms": 17.88637461140752,
+        "p95_ms": 31.153437972534448,
+        "sample_count": 20,
+        "device": "mps",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "distilbert-improved-seed42",
+      "configuration": "distilbert-improved",
+      "seed": 42,
+      "training_duration_seconds": 83.53865441703238,
+      "metadata": {
+        "model_id": "distilbert-improved-seed42",
+        "artifact_identifier": "distilbert-improved-seed42-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:14:30.064026+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "e8cbc23bbb6b58a099225ef3af86c2b7a9a756a2",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "mps",
+        "training_config": {
+          "seed": 42,
+          "epochs": 3,
+          "learning_rate": 2e-05,
+          "batch_size": 16,
+          "max_length": 256,
+          "dynamic_padding": true,
+          "class_weighted_loss": true,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.1,
+          "gradient_clip_norm": 1.0,
+          "checkpoint_selection": "highest validation macro F1, earliest epoch wins ties",
+          "base_model": "distilbert/distilbert-base-uncased",
+          "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+          "base_license": "apache-2.0",
+          "randomness": "Training seeds vary initialization, dropout, shuffle on fixed thread partitions; MPS kernels are not guaranteed bitwise deterministic."
+        },
+        "max_length": 256,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "display_name": "DistilBERT class-weighted",
+        "selected_epoch": 3,
+        "training_duration_seconds": 83.53865441703238,
+        "truncation_counts": {
+          "train": 18,
+          "validation": 5,
+          "test": 3
+        },
+        "class_weights": [
+          1.1904761791229248,
+          3.9682538509368896,
+          0.5241090059280396
+        ],
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "train_loss": 1.0981011427938938,
+            "validation": {
+              "accuracy": 0.75,
+              "macro_f1": 0.43410093091621754,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.8181818181818182,
+                  "recall": 0.32142857142857145,
+                  "f1-score": 0.46153846153846156,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.7415730337078652,
+                  "recall": 0.9705882352941176,
+                  "f1-score": 0.8407643312101911,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  9,
+                  0,
+                  19
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  2,
+                  0,
+                  66
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 11,
+                "request": 0,
+                "commentary": 89
+              }
+            }
+          },
+          {
+            "epoch": 2,
+            "train_loss": 1.05633201636374,
+            "validation": {
+              "accuracy": 0.65,
+              "macro_f1": 0.5511242937853108,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.5161290322580645,
+                  "recall": 0.5714285714285714,
+                  "f1-score": 0.5423728813559322,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.25,
+                  "recall": 0.75,
+                  "f1-score": 0.375,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.8070175438596491,
+                  "recall": 0.6764705882352942,
+                  "f1-score": 0.736,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  16,
+                  2,
+                  10
+                ],
+                [
+                  0,
+                  3,
+                  1
+                ],
+                [
+                  15,
+                  7,
+                  46
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 31,
+                "request": 12,
+                "commentary": 57
+              }
+            }
+          },
+          {
+            "epoch": 3,
+            "train_loss": 0.9990334324538708,
+            "validation": {
+              "accuracy": 0.71,
+              "macro_f1": 0.6046954994323416,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.5769230769230769,
+                  "recall": 0.5357142857142857,
+                  "f1-score": 0.5555555555555556,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.3333333333333333,
+                  "recall": 0.75,
+                  "f1-score": 0.46153846153846156,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.8153846153846154,
+                  "recall": 0.7794117647058824,
+                  "f1-score": 0.7969924812030075,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  15,
+                  2,
+                  11
+                ],
+                [
+                  0,
+                  3,
+                  1
+                ],
+                [
+                  11,
+                  4,
+                  53
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 26,
+                "request": 9,
+                "commentary": 65
+              }
+            }
+          }
+        ]
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.0981011427938938,
+          "validation": {
+            "accuracy": 0.75,
+            "macro_f1": 0.43410093091621754,
+            "per_label": {
+              "analysis": {
+                "precision": 0.8181818181818182,
+                "recall": 0.32142857142857145,
+                "f1-score": 0.46153846153846156,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.7415730337078652,
+                "recall": 0.9705882352941176,
+                "f1-score": 0.8407643312101911,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                9,
+                0,
+                19
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                2,
+                0,
+                66
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 11,
+              "request": 0,
+              "commentary": 89
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.05633201636374,
+          "validation": {
+            "accuracy": 0.65,
+            "macro_f1": 0.5511242937853108,
+            "per_label": {
+              "analysis": {
+                "precision": 0.5161290322580645,
+                "recall": 0.5714285714285714,
+                "f1-score": 0.5423728813559322,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.25,
+                "recall": 0.75,
+                "f1-score": 0.375,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.8070175438596491,
+                "recall": 0.6764705882352942,
+                "f1-score": 0.736,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                16,
+                2,
+                10
+              ],
+              [
+                0,
+                3,
+                1
+              ],
+              [
+                15,
+                7,
+                46
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 31,
+              "request": 12,
+              "commentary": 57
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 0.9990334324538708,
+          "validation": {
+            "accuracy": 0.71,
+            "macro_f1": 0.6046954994323416,
+            "per_label": {
+              "analysis": {
+                "precision": 0.5769230769230769,
+                "recall": 0.5357142857142857,
+                "f1-score": 0.5555555555555556,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.3333333333333333,
+                "recall": 0.75,
+                "f1-score": 0.46153846153846156,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.8153846153846154,
+                "recall": 0.7794117647058824,
+                "f1-score": 0.7969924812030075,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                15,
+                2,
+                11
+              ],
+              [
+                0,
+                3,
+                1
+              ],
+              [
+                11,
+                4,
+                53
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 26,
+              "request": 9,
+              "commentary": 65
+            }
+          }
+        }
+      ],
+      "validation": {
+        "accuracy": 0.71,
+        "macro_f1": 0.6046954994323416,
+        "per_label": {
+          "analysis": {
+            "precision": 0.5769230769230769,
+            "recall": 0.5357142857142857,
+            "f1-score": 0.5555555555555556,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.3333333333333333,
+            "recall": 0.75,
+            "f1-score": 0.46153846153846156,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.8153846153846154,
+            "recall": 0.7794117647058824,
+            "f1-score": 0.7969924812030075,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            15,
+            2,
+            11
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            11,
+            4,
+            53
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 26,
+          "request": 9,
+          "commentary": 65
+        }
+      },
+      "test": {
+        "accuracy": 0.6166666666666667,
+        "macro_f1": 0.5002614133048916,
+        "per_label": {
+          "analysis": {
+            "precision": 0.52,
+            "recall": 0.34210526315789475,
+            "f1-score": 0.4126984126984127,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.26666666666666666,
+            "recall": 0.5,
+            "f1-score": 0.34782608695652173,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.7125,
+            "recall": 0.7702702702702703,
+            "f1-score": 0.7402597402597403,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            13,
+            5,
+            20
+          ],
+          [
+            1,
+            4,
+            3
+          ],
+          [
+            11,
+            6,
+            57
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 25,
+          "request": 15,
+          "commentary": 80
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 12.026531272567809,
+        "p50_ms": 10.49760403111577,
+        "p95_ms": 19.919797906186435,
+        "sample_count": 20,
+        "device": "mps",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      },
+      "reload_verified": true
+    },
+    {
+      "model_id": "distilbert-improved-seed7",
+      "configuration": "distilbert-improved",
+      "seed": 7,
+      "training_duration_seconds": 130.78946437500417,
+      "metadata": {
+        "model_id": "distilbert-improved-seed7",
+        "artifact_identifier": "distilbert-improved-seed7-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:16:00.346023+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "3b9de6e256d837e607ea867da0f609f79b42902c",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "mps",
+        "training_config": {
+          "seed": 7,
+          "epochs": 3,
+          "learning_rate": 2e-05,
+          "batch_size": 16,
+          "max_length": 256,
+          "dynamic_padding": true,
+          "class_weighted_loss": true,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.1,
+          "gradient_clip_norm": 1.0,
+          "checkpoint_selection": "highest validation macro F1, earliest epoch wins ties",
+          "base_model": "distilbert/distilbert-base-uncased",
+          "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+          "base_license": "apache-2.0",
+          "randomness": "Training seeds vary initialization, dropout, shuffle on fixed thread partitions; MPS kernels are not guaranteed bitwise deterministic."
+        },
+        "max_length": 256,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "display_name": "DistilBERT class-weighted",
+        "selected_epoch": 3,
+        "training_duration_seconds": 130.78946437500417,
+        "truncation_counts": {
+          "train": 18,
+          "validation": 5,
+          "test": 3
+        },
+        "class_weights": [
+          1.1904761791229248,
+          3.9682538509368896,
+          0.5241090059280396
+        ],
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "train_loss": 1.1106013134121895,
+            "validation": {
+              "accuracy": 0.42,
+              "macro_f1": 0.24265232974910392,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.5,
+                  "recall": 0.03571428571428571,
+                  "f1-score": 0.06666666666666667,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.7321428571428571,
+                  "recall": 0.6029411764705882,
+                  "f1-score": 0.6612903225806451,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  1,
+                  16,
+                  11
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  1,
+                  26,
+                  41
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 2,
+                "request": 42,
+                "commentary": 56
+              }
+            }
+          },
+          {
+            "epoch": 2,
+            "train_loss": 1.0783695988357067,
+            "validation": {
+              "accuracy": 0.61,
+              "macro_f1": 0.4102889358703312,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.41379310344827586,
+                  "recall": 0.8571428571428571,
+                  "f1-score": 0.5581395348837209,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.8809523809523809,
+                  "recall": 0.5441176470588235,
+                  "f1-score": 0.6727272727272727,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  24,
+                  0,
+                  4
+                ],
+                [
+                  3,
+                  0,
+                  1
+                ],
+                [
+                  31,
+                  0,
+                  37
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 58,
+                "request": 0,
+                "commentary": 42
+              }
+            }
+          },
+          {
+            "epoch": 3,
+            "train_loss": 1.0442771222442389,
+            "validation": {
+              "accuracy": 0.73,
+              "macro_f1": 0.4542709037638044,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.6086956521739131,
+                  "recall": 0.5,
+                  "f1-score": 0.5490196078431373,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.7662337662337663,
+                  "recall": 0.8676470588235294,
+                  "f1-score": 0.8137931034482758,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  14,
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  9,
+                  0,
+                  59
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 23,
+                "request": 0,
+                "commentary": 77
+              }
+            }
+          }
+        ]
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.1106013134121895,
+          "validation": {
+            "accuracy": 0.42,
+            "macro_f1": 0.24265232974910392,
+            "per_label": {
+              "analysis": {
+                "precision": 0.5,
+                "recall": 0.03571428571428571,
+                "f1-score": 0.06666666666666667,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.7321428571428571,
+                "recall": 0.6029411764705882,
+                "f1-score": 0.6612903225806451,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                1,
+                16,
+                11
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                1,
+                26,
+                41
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 2,
+              "request": 42,
+              "commentary": 56
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.0783695988357067,
+          "validation": {
+            "accuracy": 0.61,
+            "macro_f1": 0.4102889358703312,
+            "per_label": {
+              "analysis": {
+                "precision": 0.41379310344827586,
+                "recall": 0.8571428571428571,
+                "f1-score": 0.5581395348837209,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.8809523809523809,
+                "recall": 0.5441176470588235,
+                "f1-score": 0.6727272727272727,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                24,
+                0,
+                4
+              ],
+              [
+                3,
+                0,
+                1
+              ],
+              [
+                31,
+                0,
+                37
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 58,
+              "request": 0,
+              "commentary": 42
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.0442771222442389,
+          "validation": {
+            "accuracy": 0.73,
+            "macro_f1": 0.4542709037638044,
+            "per_label": {
+              "analysis": {
+                "precision": 0.6086956521739131,
+                "recall": 0.5,
+                "f1-score": 0.5490196078431373,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.7662337662337663,
+                "recall": 0.8676470588235294,
+                "f1-score": 0.8137931034482758,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                14,
+                0,
+                14
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                9,
+                0,
+                59
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 23,
+              "request": 0,
+              "commentary": 77
+            }
+          }
+        }
+      ],
+      "validation": {
+        "accuracy": 0.73,
+        "macro_f1": 0.4542709037638044,
+        "per_label": {
+          "analysis": {
+            "precision": 0.6086956521739131,
+            "recall": 0.5,
+            "f1-score": 0.5490196078431373,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.7662337662337663,
+            "recall": 0.8676470588235294,
+            "f1-score": 0.8137931034482758,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            14,
+            0,
+            14
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            9,
+            0,
+            59
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 23,
+          "request": 0,
+          "commentary": 77
+        }
+      },
+      "test": {
+        "accuracy": 0.6583333333333333,
+        "macro_f1": 0.38041125541125537,
+        "per_label": {
+          "analysis": {
+            "precision": 0.5555555555555556,
+            "recall": 0.2631578947368421,
+            "f1-score": 0.35714285714285715,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.6764705882352942,
+            "recall": 0.9324324324324325,
+            "f1-score": 0.7840909090909091,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            10,
+            0,
+            28
+          ],
+          [
+            3,
+            0,
+            5
+          ],
+          [
+            5,
+            0,
+            69
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 18,
+          "request": 0,
+          "commentary": 102
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 21.096110437065363,
+        "p50_ms": 19.4960004882887,
+        "p95_ms": 32.097590959165245,
+        "sample_count": 20,
+        "device": "mps",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    },
+    {
+      "model_id": "distilbert-improved-seed2024",
+      "configuration": "distilbert-improved",
+      "seed": 2024,
+      "training_duration_seconds": 128.44466949999332,
+      "metadata": {
+        "model_id": "distilbert-improved-seed2024",
+        "artifact_identifier": "distilbert-improved-seed2024-b2b27c0cfe9b",
+        "created_at": "2026-10-24T20:18:18.815256+00:00",
+        "provenance": "weak_label",
+        "evaluation_provenance": "weak_label",
+        "semantic_quality": "unmeasured without independently human-labeled benchmark",
+        "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8",
+        "split_manifest": "reports/split_manifest.json",
+        "code_commit": "3b9de6e256d837e607ea867da0f609f79b42902c",
+        "package_versions": {
+          "torch": "2.14.1",
+          "transformers": "4.57.6",
+          "scikit-learn": "1.9.1",
+          "numpy": "2.4.6",
+          "pandas": "2.3.3",
+          "tokenizers": "0.22.2",
+          "huggingface-hub": "0.36.2"
+        },
+        "device": "mps",
+        "training_config": {
+          "seed": 2024,
+          "epochs": 3,
+          "learning_rate": 2e-05,
+          "batch_size": 16,
+          "max_length": 256,
+          "dynamic_padding": true,
+          "class_weighted_loss": true,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.1,
+          "gradient_clip_norm": 1.0,
+          "checkpoint_selection": "highest validation macro F1, earliest epoch wins ties",
+          "base_model": "distilbert/distilbert-base-uncased",
+          "base_revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+          "base_license": "apache-2.0",
+          "randomness": "Training seeds vary initialization, dropout, shuffle on fixed thread partitions; MPS kernels are not guaranteed bitwise deterministic."
+        },
+        "max_length": 256,
+        "label2id": {
+          "analysis": 0,
+          "request": 1,
+          "commentary": 2
+        },
+        "id2label": {
+          "0": "analysis",
+          "1": "request",
+          "2": "commentary"
+        },
+        "score_semantics": "Uncalibrated model scores, not probabilities of correctness.",
+        "display_name": "DistilBERT class-weighted",
+        "selected_epoch": 3,
+        "training_duration_seconds": 128.44466949999332,
+        "truncation_counts": {
+          "train": 18,
+          "validation": 5,
+          "test": 3
+        },
+        "class_weights": [
+          1.1904761791229248,
+          3.9682538509368896,
+          0.5241090059280396
+        ],
+        "epoch_history": [
+          {
+            "epoch": 1,
+            "train_loss": 1.1051852703094482,
+            "validation": {
+              "accuracy": 0.42,
+              "macro_f1": 0.28310886644219974,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.3125,
+                  "recall": 0.8928571428571429,
+                  "f1-score": 0.46296296296296297,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.85,
+                  "recall": 0.25,
+                  "f1-score": 0.38636363636363635,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  25,
+                  0,
+                  3
+                ],
+                [
+                  4,
+                  0,
+                  0
+                ],
+                [
+                  51,
+                  0,
+                  17
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 80,
+                "request": 0,
+                "commentary": 20
+              }
+            }
+          },
+          {
+            "epoch": 2,
+            "train_loss": 1.0698928870260715,
+            "validation": {
+              "accuracy": 0.74,
+              "macro_f1": 0.47176254268452844,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.6153846153846154,
+                  "recall": 0.5714285714285714,
+                  "f1-score": 0.5925925925925926,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "f1-score": 0.0,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.7945205479452054,
+                  "recall": 0.8529411764705882,
+                  "f1-score": 0.8226950354609929,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  16,
+                  1,
+                  11
+                ],
+                [
+                  0,
+                  0,
+                  4
+                ],
+                [
+                  10,
+                  0,
+                  58
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 26,
+                "request": 1,
+                "commentary": 73
+              }
+            }
+          },
+          {
+            "epoch": 3,
+            "train_loss": 1.0234246123582125,
+            "validation": {
+              "accuracy": 0.72,
+              "macro_f1": 0.660287202948278,
+              "per_label": {
+                "analysis": {
+                  "precision": 0.5454545454545454,
+                  "recall": 0.6428571428571429,
+                  "f1-score": 0.5901639344262295,
+                  "support": 28.0
+                },
+                "request": {
+                  "precision": 0.5,
+                  "recall": 0.75,
+                  "f1-score": 0.6,
+                  "support": 4.0
+                },
+                "commentary": {
+                  "precision": 0.8360655737704918,
+                  "recall": 0.75,
+                  "f1-score": 0.7906976744186046,
+                  "support": 68.0
+                }
+              },
+              "confusion_matrix": [
+                [
+                  18,
+                  1,
+                  9
+                ],
+                [
+                  0,
+                  3,
+                  1
+                ],
+                [
+                  15,
+                  2,
+                  51
+                ]
+              ],
+              "labels": [
+                "analysis",
+                "request",
+                "commentary"
+              ],
+              "support": 100,
+              "prediction_counts": {
+                "analysis": 33,
+                "request": 6,
+                "commentary": 61
+              }
+            }
+          }
+        ]
+      },
+      "epoch_history": [
+        {
+          "epoch": 1,
+          "train_loss": 1.1051852703094482,
+          "validation": {
+            "accuracy": 0.42,
+            "macro_f1": 0.28310886644219974,
+            "per_label": {
+              "analysis": {
+                "precision": 0.3125,
+                "recall": 0.8928571428571429,
+                "f1-score": 0.46296296296296297,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.85,
+                "recall": 0.25,
+                "f1-score": 0.38636363636363635,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                25,
+                0,
+                3
+              ],
+              [
+                4,
+                0,
+                0
+              ],
+              [
+                51,
+                0,
+                17
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 80,
+              "request": 0,
+              "commentary": 20
+            }
+          }
+        },
+        {
+          "epoch": 2,
+          "train_loss": 1.0698928870260715,
+          "validation": {
+            "accuracy": 0.74,
+            "macro_f1": 0.47176254268452844,
+            "per_label": {
+              "analysis": {
+                "precision": 0.6153846153846154,
+                "recall": 0.5714285714285714,
+                "f1-score": 0.5925925925925926,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.7945205479452054,
+                "recall": 0.8529411764705882,
+                "f1-score": 0.8226950354609929,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                16,
+                1,
+                11
+              ],
+              [
+                0,
+                0,
+                4
+              ],
+              [
+                10,
+                0,
+                58
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 26,
+              "request": 1,
+              "commentary": 73
+            }
+          }
+        },
+        {
+          "epoch": 3,
+          "train_loss": 1.0234246123582125,
+          "validation": {
+            "accuracy": 0.72,
+            "macro_f1": 0.660287202948278,
+            "per_label": {
+              "analysis": {
+                "precision": 0.5454545454545454,
+                "recall": 0.6428571428571429,
+                "f1-score": 0.5901639344262295,
+                "support": 28.0
+              },
+              "request": {
+                "precision": 0.5,
+                "recall": 0.75,
+                "f1-score": 0.6,
+                "support": 4.0
+              },
+              "commentary": {
+                "precision": 0.8360655737704918,
+                "recall": 0.75,
+                "f1-score": 0.7906976744186046,
+                "support": 68.0
+              }
+            },
+            "confusion_matrix": [
+              [
+                18,
+                1,
+                9
+              ],
+              [
+                0,
+                3,
+                1
+              ],
+              [
+                15,
+                2,
+                51
+              ]
+            ],
+            "labels": [
+              "analysis",
+              "request",
+              "commentary"
+            ],
+            "support": 100,
+            "prediction_counts": {
+              "analysis": 33,
+              "request": 6,
+              "commentary": 61
+            }
+          }
+        }
+      ],
+      "validation": {
+        "accuracy": 0.72,
+        "macro_f1": 0.660287202948278,
+        "per_label": {
+          "analysis": {
+            "precision": 0.5454545454545454,
+            "recall": 0.6428571428571429,
+            "f1-score": 0.5901639344262295,
+            "support": 28.0
+          },
+          "request": {
+            "precision": 0.5,
+            "recall": 0.75,
+            "f1-score": 0.6,
+            "support": 4.0
+          },
+          "commentary": {
+            "precision": 0.8360655737704918,
+            "recall": 0.75,
+            "f1-score": 0.7906976744186046,
+            "support": 68.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            18,
+            1,
+            9
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            15,
+            2,
+            51
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 100,
+        "prediction_counts": {
+          "analysis": 33,
+          "request": 6,
+          "commentary": 61
+        }
+      },
+      "test": {
+        "accuracy": 0.65,
+        "macro_f1": 0.5841821800725909,
+        "per_label": {
+          "analysis": {
+            "precision": 0.5,
+            "recall": 0.5263157894736842,
+            "f1-score": 0.5128205128205128,
+            "support": 38.0
+          },
+          "request": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1-score": 0.5,
+            "support": 8.0
+          },
+          "commentary": {
+            "precision": 0.75,
+            "recall": 0.7297297297297297,
+            "f1-score": 0.7397260273972602,
+            "support": 74.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            20,
+            3,
+            15
+          ],
+          [
+            1,
+            4,
+            3
+          ],
+          [
+            19,
+            1,
+            54
+          ]
+        ],
+        "labels": [
+          "analysis",
+          "request",
+          "commentary"
+        ],
+        "support": 120,
+        "prediction_counts": {
+          "analysis": 40,
+          "request": 8,
+          "commentary": 72
+        }
+      },
+      "latency": {
+        "warm_single_mean_ms": 10.743537463713437,
+        "p50_ms": 9.467958589084446,
+        "p95_ms": 19.50588825857267,
+        "sample_count": 20,
+        "device": "mps",
+        "conditions": "20 sequential single-comment requests after 3 warmups, tokenizer and model inference included, no HTTP overhead, MPS synchronized; dynamic length <=256."
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "configuration": "majority",
+      "seeds": [
+        42,
+        7,
+        2024
+      ],
+      "accuracy_mean": 0.6166666666666667,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.2542955326460481,
+      "macro_f1_std": 0.0,
+      "validation_macro_f1_mean": 0.2698412698412698
+    },
+    {
+      "configuration": "tfidf",
+      "seeds": [
+        42,
+        7,
+        2024
+      ],
+      "accuracy_mean": 0.65,
+      "accuracy_std": 0.0,
+      "macro_f1_mean": 0.3346228239845261,
+      "macro_f1_std": 0.0,
+      "validation_macro_f1_mean": 0.26746506986027946
+    },
+    {
+      "configuration": "distilbert-original",
+      "seeds": [
+        42,
+        7,
+        2024
+      ],
+      "accuracy_mean": 0.6277777777777778,
+      "accuracy_std": 0.010393492741038738,
+      "macro_f1_mean": 0.27839160472774144,
+      "macro_f1_std": 0.02188858039796406,
+      "validation_macro_f1_mean": 0.30163829922866064
+    },
+    {
+      "configuration": "distilbert-improved",
+      "seeds": [
+        42,
+        7,
+        2024
+      ],
+      "accuracy_mean": 0.6416666666666666,
+      "accuracy_std": 0.018002057495577376,
+      "macro_f1_mean": 0.48828494959624597,
+      "macro_f1_std": 0.08361907356800562,
+      "validation_macro_f1_mean": 0.5730845353814747
+    }
+  ],
+  "improvement": {
+    "declared_at": "2026-10-24T20:13:47.956570+00:00",
+    "declared_before_improved_test_evaluation": true,
+    "change": "class-weighted cross-entropy",
+    "reason": "Validation mean recall for request was 0.0000; train-only inverse-frequency weights address neglected classes.",
+    "validation_mean_recalls": {
+      "analysis": 0.047619047619047616,
+      "request": 0.0,
+      "commentary": 1.0
+    },
+    "original_training_losses": {
+      "42": [
+        0.9348377957940102,
+        0.8307028207927942,
+        0.7566593708470464
+      ],
+      "7": [
+        0.9856035597622395,
+        0.8094512429088354,
+        0.7321302341297269
+      ],
+      "2024": [
+        0.9371984470635653,
+        0.7942980257794261,
+        0.746784832328558
+      ]
+    },
+    "before": {
+      "epochs": 3,
+      "class_weighted_loss": false,
+      "learning_rate": 2e-05,
+      "batch_size": 16,
+      "max_length": 256
+    },
+    "after": {
+      "epochs": 3,
+      "class_weighted_loss": true,
+      "learning_rate": 2e-05,
+      "batch_size": 16,
+      "max_length": 256
+    },
+    "selection_data": "train and validation only; no test metrics consulted by this decision function",
+    "seeds": [
+      42,
+      7,
+      2024
+    ],
+    "further_search": "none",
+    "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8"
+  },
+  "quality_status": "Provisional weak-label agreement; independent semantic accuracy unmeasured.",
+  "benchmark_provenance": "weak_label",
+  "independent_human_labels": 0,
+  "teacher_not_evaluated_against_own_labels": true,
+  "seed_interpretation": "Seeds42,7,2024 measure training randomness on exactly the same frozen story partitions, not split uncertainty.",
+  "test_usage": "Test partition used only for final reporting; configuration selection uses mean validation macro F1.",
+  "class_labels": [
+    "analysis",
+    "request",
+    "commentary"
+  ],
+  "preregistration": {
+    "registered_before_test_evaluation": true,
+    "date": "2026-10-24",
+    "labels": [
+      "analysis",
+      "request",
+      "commentary"
+    ],
+    "seeds": [
+      42,
+      7,
+      2024
+    ],
+    "split": "fixed story-group 70/15/15, split seed 42",
+    "original": {
+      "epochs": 3,
+      "learning_rate": 2e-05,
+      "batch_size": 16,
+      "max_length": 256
+    },
+    "goals": {
+      "silver_macro_f1": 0.65,
+      "silver_request_recall": 0.5,
+      "warm_single_latency_ms": 500
+    },
+    "semantic_validation": "unmeasured without human_independent benchmark",
+    "improvement_policy": "Exactly one change chosen using train/validation evidence, declared in a committed file before improved test evaluation. All seeds and original results retained. Test results never choose thresholds or model configuration.",
+    "selection": "Highest mean validation macro F1 configuration; representative seed 42 retained for local application. Confidence threshold fixed at 0.60, uncalibrated."
+  },
+  "selected_model": {
+    "model_id": "distilbert-improved-seed42",
+    "selection": "configuration by mean validation macro F1; seed42 fixed before experiments",
+    "validation_macro_f1_mean": 0.5730845353814747
+  },
+  "quality_goals": {
+    "silver_macro_f1": {
+      "target": 0.65,
+      "observed": 0.48828494959624597,
+      "met": false
+    },
+    "silver_request_recall": {
+      "target": 0.5,
+      "observed": 0.5,
+      "met": true
+    },
+    "warm_single_latency_ms": {
+      "target": 500,
+      "observed": 12.026531272567809,
+      "met": true
+    },
+    "semantic_quality": {
+      "status": "unmeasured",
+      "reason": "No independent human benchmark; agreement with the NLI teacher is provisional."
+    }
+  },
+  "complete": true
+}

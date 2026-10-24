@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-10-24T20:39:34.915666+00:00",
+  "url": "http://127.0.0.1:8532",
+  "model_display_name": null,
+  "input_provenance": "synthetic_demo",
+  "checks": [
+    {
+      "check": "desktop_render",
+      "status": "passed",
+      "evidence": "Application title and accessible workspace navigation rendered at 1440px."
+    },
+    {
+      "check": "caption_contrast",
+      "status": "passed",
+      "evidence": "Browser computed caption color is rgb(82, 100, 122), matching #52647A, with container opacity 1."
+    },
+    {
+      "check": "missing_api_state",
+      "status": "passed",
+      "evidence": "Actionable API startup message; inference button disabled."
+    },
+    {
+      "check": "browser_runtime",
+      "status": "passed",
+      "evidence": "No page JavaScript errors; 0 console error messages recorded for inspection."
+    }
+  ],
+  "errors": [],
+  "console_errors": [],
+  "screenshots": [
+    "docs/images/missing-api-api-unavailable.png"
+  ],
+  "completed_at": "2026-10-24T20:39:36.137536+00:00"
+}

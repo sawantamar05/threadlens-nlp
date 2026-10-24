@@ -1,7 +1,7 @@
 .PHONY: setup check test lint run demo doctor collect experiments
 setup:
 	python3.11 -m venv .venv
-	.venv/bin/python -m pip install uv
+	.venv/bin/python -m pip install uv==0.13.5
 	.venv/bin/uv pip sync requirements.lock
 	.venv/bin/uv pip install --no-deps -e .
 check: lint test

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ThreadLens complete cleaned source comment (one JSONL record)",
+  "type": "object",
+  "required": ["comment_id", "thread_id", "story_id", "permalink", "source_timestamp", "collected_at", "text", "text_hash", "dataset_version"],
+  "properties": {
+    "comment_id": {"type": "integer", "minimum": 1},
+    "thread_id": {"type": "integer", "minimum": 1},
+    "story_id": {"type": "integer", "minimum": 1},
+    "permalink": {"type": "string", "pattern": "^https://news\\.ycombinator\\.com/item\\?id=[0-9]+$"},
+    "source_timestamp": {"type": "string", "format": "date-time"},
+    "collected_at": {"type": "string", "format": "date-time"},
+    "text": {"type": "string", "minLength": 1, "description": "Complete cleaned source text; never silently shortened to a tokenization limit."},
+    "text_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$", "description": "SHA256 of whitespace-normalized complete UTF-8 text."},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "label": {"enum": ["analysis", "request", "commentary"]},
+    "provenance": {"enum": ["weak_label", "ai_assisted_reviewed", "human_independent", "synthetic_demo"]},
+    "review_status": {"type": "string"},
+    "scores": {"type": "object", "properties": {"analysis": {"type": "number"}, "request": {"type": "number"}, "commentary": {"type": "number"}}},
+    "labeler": {"type": "object", "description": "Pinned model/revision, versioned hypotheses/configuration, timestamp, device, token/window counts."}
+  },
+  "additionalProperties": true
+}

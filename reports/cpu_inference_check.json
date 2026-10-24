@@ -1,0 +1,22 @@
+{
+  "model_id": "distilbert-improved-seed42",
+  "offline_environment": true,
+  "device": "cpu",
+  "comment_count": 3,
+  "checks": [
+    "local-files-only inference",
+    "named finite normalized scores",
+    "batch result count",
+    "long-input truncation flagged",
+    "loaded model reused",
+    "CPU readiness"
+  ],
+  "passed": true,
+  "readiness": {
+    "ready": true,
+    "model_id": "distilbert-improved-seed42",
+    "model_version": "distilbert-improved-seed42-b2b27c0cfe9b",
+    "device": "cpu",
+    "warnings": []
+  }
+}

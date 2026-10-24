@@ -203,7 +203,7 @@ ThreadLens is an original local discourse-classification portfolio application b
 - Training configuration: `{json.dumps(config, sort_keys=True)}`.
 - Duration: {metadata["training_duration_seconds"]:.2f} seconds; chosen epoch: {metadata["selected_epoch"]}. Package versions: `{json.dumps(metadata["package_versions"], sort_keys=True)}`.
 
-Weights, tokenizer, local database and raw comments are excluded from normal Git. Run the documented collection/labeling/splitting/training commands to rebuild. The artifact was saved with safetensors, reloaded locally, and checked for fixed label mapping and matching logits. The API owns one loaded transformer per process; Streamlit calls the API and does not load a second copy.
+Weights, tokenizer, local database and raw comments are excluded from normal Git. Run the documented collection/labeling/splitting/training commands to rebuild. The artifact was saved with safetensors, reloaded locally, and checked for fixed label mapping and matching logits. The API caches each requested model artifact once per process; Streamlit calls the API and does not load a second copy.
 
 ## Measured agreement, not independent accuracy
 

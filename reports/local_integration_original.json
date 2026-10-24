@@ -1,0 +1,55 @@
+{
+  "verified_at": "2026-10-24T20:13:47.861319+00:00",
+  "api": "http://127.0.0.1:8000",
+  "model_id": "distilbert-original-seed42",
+  "checks": {
+    "health": true,
+    "actual_model_ready": {
+      "ready": true,
+      "model_id": "distilbert-original-seed42",
+      "model_version": "distilbert-original-seed42-b2b27c0cfe9b",
+      "device": "mps",
+      "warnings": []
+    },
+    "single_prediction_on_original_synthetic_input": {
+      "label": "commentary",
+      "scores": {
+        "analysis": 0.3755873739719391,
+        "request": 0.10356848686933517,
+        "commentary": 0.5208441019058228
+      },
+      "model_id": "distilbert-original-seed42",
+      "model_version": "distilbert-original-seed42-b2b27c0cfe9b",
+      "truncated": false,
+      "processing_ms": 2060.633,
+      "warnings": [
+        "Scores are uncalibrated model outputs, not probabilities of correctness.",
+        "Trained on weak labels; semantic accuracy is not independently validated.",
+        "Low confidence: maximum score below 0.60."
+      ],
+      "low_confidence": true
+    },
+    "invalid_and_bounded_inputs": true,
+    "missing_model_actionable_503": true,
+    "long_comment_truncation_flag": true,
+    "actual_model_batch_order_and_score_consistency": true,
+    "arbitrary_urls_rejected": true,
+    "actual_official_hn_thread": {
+      "story_id": 47340079,
+      "comments": 5,
+      "counts": {
+        "analysis": 0,
+        "request": 0,
+        "commentary": 5
+      },
+      "source_text_published": false
+    },
+    "annotation_persistence_and_ai_provenance": {
+      "saved": true,
+      "independent_human": false
+    },
+    "experiment_report_provenance": "weak_label",
+    "openapi": true
+  },
+  "all_passed": true
+}

@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-10-24T20:39:12.454011+00:00",
+  "url": "http://127.0.0.1:8511",
+  "model_display_name": null,
+  "input_provenance": "synthetic_demo",
+  "checks": [
+    {
+      "check": "desktop_render",
+      "status": "passed",
+      "evidence": "Application title and accessible workspace navigation rendered at 1440px."
+    },
+    {
+      "check": "caption_contrast",
+      "status": "passed",
+      "evidence": "Browser computed caption color is rgb(82, 100, 122), matching #52647A, with container opacity 1."
+    },
+    {
+      "check": "model_selection",
+      "status": "passed",
+      "evidence": "Model selector rendered; selected registered default; control: Select model"
+    },
+    {
+      "check": "empty_input",
+      "status": "passed",
+      "evidence": "Empty submission displays validation error without a prediction."
+    },
+    {
+      "check": "single_prediction",
+      "status": "passed",
+      "evidence": "Synthetic comment produces label, all-score chart, model version, timing, and uncalibrated-score disclosure."
+    },
+    {
+      "check": "narrow_layout",
+      "status": "passed",
+      "evidence": "390px viewport has no horizontal document overflow; actual screenshot saved."
+    },
+    {
+      "check": "invalid_story_url",
+      "status": "passed",
+      "evidence": "Arbitrary non-HN URL receives a visible HTTP 422 validation error."
+    },
+    {
+      "check": "csv_upload_predict_download",
+      "status": "passed",
+      "evidence": "Real browser upload \u2192 API inference \u2192 CSV download completed for 3 rows; original order/column collision preserved and formula escaped."
+    },
+    {
+      "check": "experiments_screen",
+      "status": "passed",
+      "evidence": "Offline demonstration report state rendered; no real-data benchmark claim made."
+    },
+    {
+      "check": "blind_review_save_reload",
+      "status": "passed",
+      "evidence": "Synthetic queue hid draft, saved default AI-assisted review intent with synthetic provenance enforced by API, and reloaded immutable draft/revisions."
+    },
+    {
+      "check": "about_metadata",
+      "status": "passed",
+      "evidence": "Architecture, active model metadata, limitations, data sources and AI-assistance disclosure rendered."
+    },
+    {
+      "check": "browser_runtime",
+      "status": "passed",
+      "evidence": "No page JavaScript errors; 0 console error messages recorded for inspection."
+    }
+  ],
+  "errors": [],
+  "console_errors": [],
+  "screenshots": [
+    "docs/images/demo-classify-desktop.png",
+    "docs/images/demo-prediction-desktop.png",
+    "docs/images/demo-classify-narrow.png",
+    "docs/images/demo-prediction-narrow.png",
+    "docs/images/demo-thread-validation.png",
+    "docs/images/demo-batch-results.png",
+    "docs/images/demo-annotation-review.png",
+    "docs/images/demo-about-models.png"
+  ],
+  "completed_at": "2026-10-24T20:39:19.727372+00:00"
+}

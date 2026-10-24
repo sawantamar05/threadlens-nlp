@@ -1,0 +1,174 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-24T20:22:42.590Z",
+  "source_commit": "83fa9cb1f5576c72f30c92a17ffe2ed0538ace84",
+  "initial_source_commit": "3b9de6e256d837e607ea867da0f609f79b42902c",
+  "platform": {
+    "os": "macOS 26.6.2",
+    "architecture": "arm64",
+    "python": "3.11.0",
+    "device_reported_by_doctor": "mps"
+  },
+  "workflow_wall_seconds": 401,
+  "isolation": {
+    "fresh_local_git_clone": true,
+    "fresh_full_venv": true,
+    "fresh_lightweight_ci_venv": true,
+    "project_environment_unchanged": true,
+    "raw_data_or_model_weights_copied": false
+  },
+  "setup": {
+    "uv": "0.13.5",
+    "full_lock_packages": 73,
+    "ci_lock_packages": 58,
+    "full_lock_sha256": "ff57194a01ac3d19a2a857851211a3d6131400a3366ad1637ae379141971d792",
+    "commands": [
+      "python3.11 -m venv .venv",
+      ".venv/bin/python -m pip install uv==0.13.5",
+      ".venv/bin/uv pip sync --python .venv/bin/python requirements.lock",
+      ".venv/bin/uv pip install --python .venv/bin/python --no-deps -e ."
+    ]
+  },
+  "checks": {
+    "doctor": {
+      "status": "passed",
+      "registry_initially_present": false,
+      "device": "mps"
+    },
+    "lint": {
+      "status": "passed",
+      "command": ".venv/bin/ruff check ."
+    },
+    "formatting": {
+      "status": "passed",
+      "files": 38,
+      "command": ".venv/bin/ruff format --check ."
+    },
+    "full_offline_tests": {
+      "status": "passed",
+      "passed": 70,
+      "failed": 0,
+      "duration_seconds": 3.22,
+      "source_commit": "83fa9cb1f5576c72f30c92a17ffe2ed0538ace84",
+      "environment": {
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1"
+      }
+    },
+    "lightweight_ci_offline_tests": {
+      "status": "passed",
+      "passed": 70,
+      "failed": 0,
+      "duration_seconds": 3.05,
+      "torch_installed": false,
+      "source_commit": "83fa9cb1f5576c72f30c92a17ffe2ed0538ace84",
+      "environment": {
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1"
+      }
+    },
+    "integration": {
+      "source_commit": "3b9de6e256d837e607ea867da0f609f79b42902c",
+      "missing_real_model": {
+        "status": "passed",
+        "readiness_http_status": 503,
+        "registered_models": 0
+      },
+      "offline_demo_reload": {
+        "status": "passed",
+        "model_id": "demo-tfidf",
+        "model_version": "synthetic-demo-v1",
+        "label": "request",
+        "hf_hub_offline": true
+      },
+      "live_launcher": {
+        "status": "passed",
+        "api_health": 200,
+        "ui_health": 200,
+        "model_readiness": 200,
+        "prediction_status": 200,
+        "api_port": 8021,
+        "ui_port": 8521
+      },
+      "port_conflict_preserves_services": {
+        "status": "passed",
+        "second_launcher_exit_code": 1,
+        "first_launcher_still_running": true,
+        "existing_services_healthy": true
+      },
+      "launcher_shutdown": {
+        "status": "passed",
+        "launcher_exit_code": 0,
+        "both_ports_closed": true,
+        "only_owned_processes_signaled": true
+      },
+      "duration_seconds": 15.689,
+      "full_lock_sha256": "ff57194a01ac3d19a2a857851211a3d6131400a3366ad1637ae379141971d792"
+    }
+  },
+  "initial_failure_and_fix": {
+    "issue": "First cold Streamlit AppTest exceeded the default 3-second script timeout while verification environments and model/browser work ran concurrently.",
+    "initial_full": {
+      "passed": 69,
+      "failed": 1,
+      "duration_seconds": 96.87
+    },
+    "initial_lightweight_ci": {
+      "passed": 69,
+      "failed": 1,
+      "duration_seconds": 86.55
+    },
+    "fix": "Set AppTest default_timeout=30 without changing assertions or production request timeouts; reran the two environments sequentially.",
+    "fixed_in_commit": "83fa9cb1f5576c72f30c92a17ffe2ed0538ace84",
+    "final_result": "70/70 passed in each environment"
+  },
+  "warnings": [
+    "Starlette emits a TestClient httpx deprecation warning; it does not affect the tested behavior."
+  ],
+  "privacy": "Only synthetic fixtures and public code were used in this clean-clone verification. No collected source comments or trained model artifacts were copied.",
+  "final_source_recheck": {
+    "source_commit": "4a505ab",
+    "full_offline_tests": {
+      "passed": 73,
+      "failed": 0,
+      "duration_seconds": 2.38
+    },
+    "torch_free_ci_tests": {
+      "passed": 73,
+      "failed": 0,
+      "duration_seconds": 2.32
+    },
+    "lint": "passed",
+    "formatting": "passed",
+    "live_developer_commands": {
+      "prepare_review": {
+        "status": "passed",
+        "first_inserted": 0,
+        "second_inserted": 0,
+        "queue": {
+          "items": 30,
+          "revisions": 0,
+          "human_independent": 0
+        },
+        "synthetic_root_isolated": true
+      },
+      "safe_stop": {
+        "status": "passed",
+        "separate_cli_process": true,
+        "recorded_identity_and_start_time": true,
+        "mismatched_identity_refused": true,
+        "refusal_left_services_healthy": true,
+        "stop_exit_code": 0,
+        "launcher_exit_code": 0,
+        "state_record_removed": true,
+        "both_ports_closed": true,
+        "ports": [
+          8021,
+          8521
+        ]
+      },
+      "duration_seconds": 2.592
+    },
+    "note": "Both independently installed environments were reused at the final source revision; lock files unchanged."
+  }
+}

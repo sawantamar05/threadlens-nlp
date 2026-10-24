@@ -1,0 +1,92 @@
+{
+  "timestamp": "2026-10-24T20:39:19.857434+00:00",
+  "url": "http://127.0.0.1:8501",
+  "model_display_name": "DistilBERT class-weighted",
+  "input_provenance": "synthetic_demo",
+  "checks": [
+    {
+      "check": "desktop_render",
+      "status": "passed",
+      "evidence": "Application title and accessible workspace navigation rendered at 1440px."
+    },
+    {
+      "check": "caption_contrast",
+      "status": "passed",
+      "evidence": "Browser computed caption color is rgb(82, 100, 122), matching #52647A, with container opacity 1."
+    },
+    {
+      "check": "model_selection",
+      "status": "passed",
+      "evidence": "Model selector rendered; selected DistilBERT class-weighted; control: Select model"
+    },
+    {
+      "check": "empty_input",
+      "status": "passed",
+      "evidence": "Empty submission displays validation error without a prediction."
+    },
+    {
+      "check": "single_prediction",
+      "status": "passed",
+      "evidence": "Synthetic comment produces label, all-score chart, model version, timing, and uncalibrated-score disclosure."
+    },
+    {
+      "check": "narrow_layout",
+      "status": "passed",
+      "evidence": "390px viewport has no horizontal document overflow; actual screenshot saved."
+    },
+    {
+      "check": "invalid_story_url",
+      "status": "passed",
+      "evidence": "Arbitrary non-HN URL receives a visible HTTP 422 validation error."
+    },
+    {
+      "check": "actual_thread_analysis",
+      "status": "passed",
+      "evidence": "Retrieved and classified 20 comments; label counts/proportions and expandable previews rendered. Keyboard label filtering changed 'Showing 20 of 20 comments' to 'Showing 10 of 20 comments'. No source text exported or captured."
+    },
+    {
+      "check": "csv_upload_predict_download",
+      "status": "passed",
+      "evidence": "Real browser upload \u2192 API inference \u2192 CSV download completed for 3 rows; original order/column collision preserved and formula escaped."
+    },
+    {
+      "check": "experiment_charts",
+      "status": "passed",
+      "evidence": "Actual report renders all runs, label counts, per-label table, confusion matrix, seed variation and provenance."
+    },
+    {
+      "check": "report_download",
+      "status": "passed",
+      "evidence": "Downloaded report contains 12 actual runs."
+    },
+    {
+      "check": "annotation_screen",
+      "status": "passed",
+      "evidence": "Review screen rendered without saving or screenshotting real source comments."
+    },
+    {
+      "check": "about_metadata",
+      "status": "passed",
+      "evidence": "Architecture, active model metadata, limitations, data sources and AI-assistance disclosure rendered."
+    },
+    {
+      "check": "browser_runtime",
+      "status": "passed",
+      "evidence": "No page JavaScript errors; 0 console error messages recorded for inspection."
+    }
+  ],
+  "errors": [],
+  "console_errors": [],
+  "screenshots": [
+    "docs/images/trained-classify-desktop.png",
+    "docs/images/trained-prediction-desktop.png",
+    "docs/images/trained-classify-narrow.png",
+    "docs/images/trained-prediction-narrow.png",
+    "docs/images/trained-thread-validation.png",
+    "docs/images/trained-batch-results.png",
+    "docs/images/trained-experiments.png",
+    "docs/images/trained-confusion-matrix.png",
+    "docs/images/trained-about-models.png"
+  ],
+  "completed_at": "2026-10-24T20:39:31.856866+00:00"
+}

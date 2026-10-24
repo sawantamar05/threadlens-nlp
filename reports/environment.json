@@ -1,0 +1,12 @@
+{
+  "inspection_date": "2026-10-24",
+  "hardware": "Apple M3 MacBook Air",
+  "memory_gib": 16,
+  "cpu_cores": 8,
+  "architecture": "arm64",
+  "os": "macOS 26.6.2",
+  "python": "3.11.0",
+  "disk_available_gib_at_start": 19,
+  "mps_verified_available": true,
+  "scope": "Original recorded local experiments; future hardware may differ"
+}
