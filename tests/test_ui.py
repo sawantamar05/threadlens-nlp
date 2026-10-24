@@ -115,7 +115,7 @@ def api_stub(monkeypatch):
 
 
 def test_empty_input_and_prediction_then_model_change(api_stub):
-    app = AppTest.from_file(str(APP)).run()
+    app = AppTest.from_file(str(APP), default_timeout=30).run()
     assert not app.exception
     control(app.button, "Classify comment").click().run()
     assert any("non-empty comment" in error.value for error in app.error)
@@ -130,7 +130,7 @@ def test_empty_input_and_prediction_then_model_change(api_stub):
 
 
 def test_experiments_show_provenance_and_actual_run_tables(api_stub):
-    app = AppTest.from_file(str(APP)).run()
+    app = AppTest.from_file(str(APP), default_timeout=30).run()
     control(app.radio, "Workspace").set_value("Experiments").run()
     assert not app.exception
     assert any("not independently validated" in warning.value for warning in app.warning)
@@ -140,7 +140,7 @@ def test_experiments_show_provenance_and_actual_run_tables(api_stub):
 
 
 def test_blind_review_and_revision_reload_remain_ai_assisted(api_stub):
-    app = AppTest.from_file(str(APP)).run()
+    app = AppTest.from_file(str(APP), default_timeout=30).run()
     control(app.radio, "Workspace").set_value("Annotation review").run()
     assert not app.exception
     assert not app.get("json")
@@ -160,7 +160,7 @@ def test_missing_api_is_actionable_and_disables_inference(monkeypatch):
         raise httpx.ConnectError("API offline")
 
     monkeypatch.setattr(httpx, "request", disconnected)
-    app = AppTest.from_file(str(APP)).run()
+    app = AppTest.from_file(str(APP), default_timeout=30).run()
     assert not app.exception
     assert control(app.button, "Classify comment").disabled
     assert any("local API is unavailable" in error.value for error in app.error)

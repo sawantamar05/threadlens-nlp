@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import importlib.metadata
 import json
+import os
+import platform
 import random
 import subprocess
 import time
@@ -98,6 +100,15 @@ def base_metadata(model_id: str, split: dict, device: str, config: dict) -> dict
         "split_manifest": "reports/split_manifest.json",
         "code_commit": code_revision(),
         "package_versions": versions(),
+        "runtime": {
+            "system": platform.system(),
+            "system_version": platform.mac_ver()[0]
+            if platform.system() == "Darwin"
+            else platform.release(),
+            "architecture": platform.machine(),
+            "python": platform.python_version(),
+            "logical_cpu_count": os.cpu_count(),
+        },
         "device": device,
         "training_config": config,
         "max_length": config.get("max_length"),
@@ -315,7 +326,8 @@ def train_transformer(
         texts = [r["text"] for r in subset]
         encoded = tokenizer(texts, truncation=True, max_length=256)
         full_lengths = [
-            len(tokenizer.encode(text, add_special_tokens=True, truncation=False)) for text in texts
+            len(tokenizer.encode(text, add_special_tokens=True, truncation=False, verbose=False))
+            for text in texts
         ]
         truncation_counts[name] = sum(length > 256 for length in full_lengths)
         encoded_parts[name] = [

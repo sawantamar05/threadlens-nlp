@@ -365,7 +365,9 @@ class ModelManager:
 
         tokenizer = loaded["tokenizer"]
         max_length = self._metadata(entry)["max_length"]
-        lengths = tokenizer(texts, truncation=False, padding=False, return_length=True)["length"]
+        lengths = tokenizer(
+            texts, truncation=False, padding=False, return_length=True, verbose=False
+        )["length"]
         rows = []
         for start in range(0, len(texts), 16):
             encoded = tokenizer(
