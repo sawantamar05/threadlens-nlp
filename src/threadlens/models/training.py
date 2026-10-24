@@ -241,14 +241,14 @@ def train_baselines(
 
 
 def _model_revision() -> str:
-    from huggingface_hub import HfApi
-
+    source = json.loads((settings.root / "configs/model_sources.json").read_text())["student"]
     path = settings.local / "distilbert_revision.json"
     if not path.exists():
-        path.write_text(
-            json.dumps({"model": BASE_MODEL, "revision": HfApi().model_info(BASE_MODEL).sha})
-        )
-    return json.loads(path.read_text())["revision"]
+        path.write_text(json.dumps({"model": BASE_MODEL, "revision": source["revision"]}))
+    revision = json.loads(path.read_text())["revision"]
+    if revision != source["revision"] or BASE_MODEL != source["model_id"]:
+        raise ValueError("Cached base model differs from configs/model_sources.json.")
+    return revision
 
 
 def train_transformer(

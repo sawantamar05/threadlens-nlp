@@ -134,3 +134,35 @@ def test_baseline_reloads_and_vectorizer_never_fits_test_text(tmp_path, monkeypa
     assert {run["configuration"] for run in runs} == {"majority", "tfidf"}
     registry = json.loads((tmp_path / "artifacts/model_registry.json").read_text())
     assert len(registry["models"]) == 2
+
+
+def test_public_report_does_not_count_as_a_local_model_artifact(tmp_path, monkeypatch):
+    from threadlens.evaluation import runner
+
+    monkeypatch.setattr(runner, "settings", Settings(root=tmp_path))
+    configuration = "distilbert-original"
+    assert not runner.configuration_artifact_available(configuration, "frozen-data")
+    folder = tmp_path / "artifacts/distilbert-original-seed42"
+    folder.mkdir(parents=True)
+    (folder / "metadata.json").write_text(
+        json.dumps({"dataset_hash": "frozen-data", "model_id": "distilbert-original-seed42"})
+    )
+    (folder / "model.safetensors").write_bytes(b"unit test placeholder; no actual model load")
+    registry = tmp_path / "artifacts/model_registry.json"
+    registry.write_text(json.dumps({"models": [{"id": "distilbert-original-seed42"}]}))
+    assert runner.configuration_artifact_available(configuration, "frozen-data")
+    assert not runner.configuration_artifact_available(configuration, "other-data")
+    registry.write_text(json.dumps({"models": []}))
+    assert not runner.configuration_artifact_available(configuration, "frozen-data")
+
+
+def test_improvement_is_bound_to_frozen_dataset(tmp_path, monkeypatch):
+    from threadlens.evaluation import runner
+
+    monkeypatch.setattr(runner, "settings", Settings(root=tmp_path))
+    config_dir = tmp_path / "configs"
+    config_dir.mkdir()
+    config_dir.joinpath("improvement.json").write_text(json.dumps({"dataset_hash": "other-data"}))
+    runs = [{"configuration": "distilbert-original", "metadata": {"dataset_hash": "frozen-data"}}]
+    with pytest.raises(ValueError, match="dataset hash"):
+        runner.declare_improvement(runs)

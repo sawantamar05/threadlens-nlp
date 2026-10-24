@@ -51,9 +51,15 @@ def _report(
 def declare_improvement(runs: list[dict]) -> dict:
     """Inspect validation/training evidence only, then freeze exactly one change."""
     path = settings.root / "configs/improvement.json"
-    if path.exists():
-        return json.loads(path.read_text())
     original = [run for run in runs if run["configuration"] == "distilbert-original"]
+    dataset_hash = original[0]["metadata"]["dataset_hash"]
+    if path.exists():
+        declaration = json.loads(path.read_text())
+        if declaration.get("dataset_hash") != dataset_hash:
+            raise ValueError(
+                "Improvement declaration belongs to another or unspecified dataset hash. Preserve this benchmark and explicitly version a new one."
+            )
+        return declaration
     mean_recalls = {
         label: float(np.mean([run["validation"]["per_label"][label]["recall"] for run in original]))
         for label in LABELS
@@ -61,6 +67,7 @@ def declare_improvement(runs: list[dict]) -> dict:
     worst_label = min(mean_recalls, key=mean_recalls.get)
     weighted = mean_recalls[worst_label] < 0.5
     config = {
+        "dataset_hash": dataset_hash,
         "declared_at": utc_now(),
         "declared_before_improved_test_evaluation": True,
         "change": "class-weighted cross-entropy" if weighted else "training budget: 3 to 5 epochs",
@@ -94,6 +101,30 @@ def declare_improvement(runs: list[dict]) -> dict:
     return config
 
 
+def configuration_artifact_available(configuration: str, dataset_hash: str) -> bool:
+    """A committed report alone cannot satisfy artifact reconstruction on a clean clone."""
+    model_id = f"{configuration}-seed42"
+    folder = settings.artifacts / model_id
+    metadata_path = folder / "metadata.json"
+    registry_path = settings.artifacts / "model_registry.json"
+    artifact_path = folder / (
+        "model.safetensors" if configuration.startswith("distilbert") else "model.joblib"
+    )
+    if not metadata_path.is_file() or not registry_path.is_file() or not artifact_path.is_file():
+        return False
+    try:
+        metadata = json.loads(metadata_path.read_text())
+        registry = json.loads(registry_path.read_text())
+    except (ValueError, OSError):
+        return False
+    return (
+        artifact_path.stat().st_size > 0
+        and metadata.get("dataset_hash") == dataset_hash
+        and metadata.get("model_id") == model_id
+        and any(entry.get("id") == model_id for entry in registry.get("models", []))
+    )
+
+
 def run_experiments(*, stage: str = "initial", device: str = "auto") -> dict:
     if stage not in {"initial", "improved", "all"}:
         raise ValueError("Stage must be initial, improved, or all.")
@@ -104,7 +135,15 @@ def run_experiments(*, stage: str = "initial", device: str = "auto") -> dict:
     if existing and existing["dataset"]["dataset_hash"] != split["dataset_hash"]:
         raise ValueError("Experiment report belongs to a different frozen dataset.")
     runs = existing.get("runs", [])
-    if not any(run["configuration"] == "tfidf" for run in runs):
+    for configuration in ["majority", "tfidf", "distilbert-original", "distilbert-improved"]:
+        if not configuration_artifact_available(configuration, split["dataset_hash"]):
+            # Rebuild every seed for this configuration together, preserving the declared protocol.
+            runs = [run for run in runs if run["configuration"] != configuration]
+    baseline_configurations = {
+        run["configuration"] for run in runs if run["configuration"] in {"majority", "tfidf"}
+    }
+    if baseline_configurations != {"majority", "tfidf"}:
+        runs = [run for run in runs if run["configuration"] not in {"majority", "tfidf"}]
         runs.extend(train_baselines(records, split))
         _report(records, split, runs)
     for seed in [42, 7, 2024]:

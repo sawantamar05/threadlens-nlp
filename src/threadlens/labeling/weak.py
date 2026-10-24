@@ -33,7 +33,6 @@ def choose_device(requested: str = "auto") -> str:
 
 def label_dataset(*, device: str = "auto", batch_size: int = 12) -> dict:
     import torch
-    from huggingface_hub import HfApi
     from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
     raw = settings.root / "data/raw/comments.jsonl"
@@ -44,12 +43,13 @@ def label_dataset(*, device: str = "auto", batch_size: int = 12) -> dict:
     )
     completed = {r["comment_id"]: r for r in existing}
     config_path = settings.local / "labeler_config.json"
+    source = json.loads((settings.root / "configs/model_sources.json").read_text())["teacher"]
     if config_path.exists():
         config = json.loads(config_path.read_text())
     else:
         config = {
             "model_id": TEACHER,
-            "revision": HfApi().model_info(TEACHER).sha,
+            "revision": source["revision"],
             "taxonomy_version": TEMPLATE_VERSION,
             "hypothesis_template": "direct NLI premise/hypothesis",
             "hypotheses": HYPOTHESES,
@@ -62,6 +62,10 @@ def label_dataset(*, device: str = "auto", batch_size: int = 12) -> dict:
             "provenance": "weak_label",
         }
         config_path.write_text(json.dumps(config, indent=2))
+    if config["model_id"] != source["model_id"] or config["revision"] != source["revision"]:
+        raise ValueError(
+            "Cached labeler differs from the pinned public model configuration; use a new dataset version."
+        )
     selected_device = choose_device(device)
     print(f"Weak labeler device: {selected_device}; revision {config['revision']}", flush=True)
     tokenizer = AutoTokenizer.from_pretrained(TEACHER, revision=config["revision"])

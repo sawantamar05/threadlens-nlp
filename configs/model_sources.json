@@ -1,0 +1,12 @@
+{
+  "teacher": {
+    "model_id": "cross-encoder/nli-distilroberta-base",
+    "revision": "b14d131f9d32668a5e6a982729b57ff6ed5dfcbd",
+    "license": "apache-2.0"
+  },
+  "student": {
+    "model_id": "distilbert/distilbert-base-uncased",
+    "revision": "12040accade4e8a0f71eabdb258fecc2e7e948be",
+    "license": "apache-2.0"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "declared_at": "2026-10-24T20:13:47.956570+00:00",
+  "declared_before_improved_test_evaluation": true,
+  "change": "class-weighted cross-entropy",
+  "reason": "Validation mean recall for request was 0.0000; train-only inverse-frequency weights address neglected classes.",
+  "validation_mean_recalls": {
+    "analysis": 0.047619047619047616,
+    "request": 0.0,
+    "commentary": 1.0
+  },
+  "original_training_losses": {
+    "42": [
+      0.9348377957940102,
+      0.8307028207927942,
+      0.7566593708470464
+    ],
+    "7": [
+      0.9856035597622395,
+      0.8094512429088354,
+      0.7321302341297269
+    ],
+    "2024": [
+      0.9371984470635653,
+      0.7942980257794261,
+      0.746784832328558
+    ]
+  },
+  "before": {
+    "epochs": 3,
+    "class_weighted_loss": false,
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "max_length": 256
+  },
+  "after": {
+    "epochs": 3,
+    "class_weighted_loss": true,
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "max_length": 256
+  },
+  "selection_data": "train and validation only; no test metrics consulted by this decision function",
+  "seeds": [
+    42,
+    7,
+    2024
+  ],
+  "further_search": "none",
+  "dataset_hash": "b2b27c0cfe9b9b21248a53231e192aaad478879a347a7102b552d7f8f612a2e8"
+}
