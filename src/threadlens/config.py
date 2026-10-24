@@ -1,4 +1,5 @@
 """Central paths and bounded service settings. No global environment changes."""
+
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -13,6 +14,7 @@ DEFINITIONS = {
 }
 ROOT = Path(__file__).resolve().parents[2]
 
+
 @dataclass(frozen=True)
 class Settings:
     root: Path = field(default_factory=lambda: Path(os.getenv("THREADLENS_ROOT", str(ROOT))))
@@ -21,17 +23,22 @@ class Settings:
     max_csv_bytes: int = 2 * 1024 * 1024
     max_csv_rows: int = 1000
     low_confidence: float = 0.6
+
     @property
     def local(self) -> Path:
         return self.root / ".local"
+
     @property
     def artifacts(self) -> Path:
         return self.root / "artifacts"
+
     @property
     def database(self) -> Path:
         return self.local / "threadlens.sqlite3"
+
     @property
     def reports(self) -> Path:
         return self.root / "reports"
+
 
 settings = Settings()

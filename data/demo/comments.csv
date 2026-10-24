@@ -1,0 +1,31 @@
+text,label
+"Could you explain how you chose the database index?",request
+"Does anyone know a guide to profiling Python memory?",request
+"Please share the steps needed to reproduce that error.",request
+"Can someone validate whether this migration plan is safe?",request
+"What would you recommend for a small offline search engine?",request
+"I have a sixteen gigabyte laptop. How can I reduce the model memory?",request
+"Where can I find documentation for this API?",request
+"Is there a way to preserve paragraph breaks in the output?",request
+"Would you show an example of the group split?",request
+"Can you help me understand the licensing requirements?",request
+"The cache reduced latency in our test because repeated requests reused the parsed response.",analysis
+"We measured thirty milliseconds with the index and two hundred without it on the same query.",analysis
+"The split leaks discussion context when replies to one story appear in both partitions.",analysis
+"This retry policy amplifies traffic: each failed request launches four new requests at once.",analysis
+"The local model fits in memory because its weights use fewer parameters than the larger checkpoint.",analysis
+"In our comparison the CPU used less memory but completed the same batch more slowly.",analysis
+"Keeping the original label matters because later revisions otherwise erase the annotation history.",analysis
+"A number alone does not support the conclusion; this example gives no measurement procedure.",analysis
+"Truncating the beginning loses the request in this comment because the question appears in its final paragraph.",analysis
+"The tests caught the ordering bug by assigning unique row identifiers before batching.",analysis
+"I like this idea.",commentary
+"That is a wonderful name for a parser.",commentary
+"Another day another framework.",commentary
+"This seems overrated to me.",commentary
+"My favorite editor remains the old one.",commentary
+"Here is a link to a related article.",commentary
+"Who needs sleep when there are logs to read?",commentary
+"I wish every project had a teal dashboard.",commentary
+"That announcement made my morning.",commentary
+"We should call the next release the debugging duck.",commentary
