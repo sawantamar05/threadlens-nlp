@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "threadlens-nlp"
+version = "0.1.0"
+description = "Local discussion intelligence with transparent NLP experiments"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+authors = [{name = "Amar Sawant"}]
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "pydantic>=2.10,<3",
+  "streamlit>=1.45,<2", "torch>=2.6,<3", "transformers>=4.57,<5",
+  "scikit-learn>=1.6,<2", "pandas>=2.2,<3", "numpy>=2,<3",
+  "httpx>=0.28,<1", "beautifulsoup4>=4.13,<5", "plotly>=6,<7",
+  "joblib>=1.4,<2", "huggingface-hub>=0.34,<1", "langdetect>=1.0.9,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[project.scripts]
+threadlens = "threadlens.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/threadlens"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

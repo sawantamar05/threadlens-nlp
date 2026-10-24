@@ -1,0 +1,12 @@
+{
+  "registered_before_test_evaluation": true,
+  "date": "2026-10-24",
+  "labels": ["analysis", "request", "commentary"],
+  "seeds": [42, 7, 2024],
+  "split": "fixed story-group 70/15/15, split seed 42",
+  "original": {"epochs": 3, "learning_rate": 0.00002, "batch_size": 16, "max_length": 256},
+  "goals": {"silver_macro_f1": 0.65, "silver_request_recall": 0.5, "warm_single_latency_ms": 500},
+  "semantic_validation": "unmeasured without human_independent benchmark",
+  "improvement_policy": "Exactly one change chosen using train/validation evidence, declared in a committed file before improved test evaluation. All seeds and original results retained. Test results never choose thresholds or model configuration.",
+  "selection": "Highest mean validation macro F1 configuration; representative seed 42 retained for local application. Confidence threshold fixed at 0.60, uncalibrated."
+}
