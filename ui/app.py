@@ -639,7 +639,7 @@ def review_page() -> None:
             if revisions:
                 st.dataframe(pd.DataFrame(revisions), hide_index=True, width="stretch")
             else:
-                st.caption("No human review revisions have been saved for this comment.")
+                st.caption("No review revisions have been saved for this comment.")
     with right:
         with st.container(border=True):
             taxonomy()

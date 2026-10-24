@@ -70,10 +70,18 @@ def parser() -> argparse.ArgumentParser:
     sub = cli.add_subparsers(dest="command", required=True)
     sub.add_parser("doctor", help="Inspect environment and model artifacts")
     sub.add_parser("demo", help="Build isolated synthetic demo baseline; no downloads")
+    sub.add_parser(
+        "prepare-review", help="Import local labels into the revision-preserving annotation queue"
+    )
     run = sub.add_parser("serve", help="Start API and UI; Ctrl+C stops both")
     run.add_argument("--api-port", type=int, default=8000)
     run.add_argument("--ui-port", type=int, default=8501)
     run.add_argument("--demo", action="store_true")
+    stop_command = sub.add_parser(
+        "stop", help="Stop only the recorded ThreadLens launcher and its children"
+    )
+    stop_command.add_argument("--api-port", type=int, default=8000)
+    stop_command.add_argument("--ui-port", type=int, default=8501)
     collect = sub.add_parser("collect", help="Resumable fresh official HN API collection")
     collect.add_argument("--threads", type=int, default=36)
     collect.add_argument("--per-thread", type=int, default=20)
@@ -115,10 +123,25 @@ def main() -> None:
             from threadlens.demo import prepare_demo
 
             emit(prepare_demo(settings.local / "demo"))
+        elif args.command == "prepare-review":
+            from threadlens.storage.annotations import AnnotationStore
+
+            path = settings.local / "labeled.jsonl"
+            if not path.is_file():
+                raise ValueError(
+                    "No local labels. Run threadlens label first; demo labels live in the separate demo root."
+                )
+            records = [json.loads(line) for line in path.read_text().splitlines() if line]
+            store = AnnotationStore(settings.database)
+            emit({"inserted": store.import_records(records), "queue": store.counts()})
         elif args.command == "serve":
             from threadlens.launcher import serve
 
             serve(args.api_port, args.ui_port, args.demo)
+        elif args.command == "stop":
+            from threadlens.launcher import stop
+
+            stop(args.api_port, args.ui_port)
         elif args.command == "collect":
             from threadlens.data.hn import collect_dataset
 

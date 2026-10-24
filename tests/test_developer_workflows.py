@@ -47,3 +47,66 @@ def test_experiment_cli_supports_required_commit_boundary():
     parsed = parser().parse_args(["experiments", "--stage", "improved", "--device", "cpu"])
     assert parsed.stage == "improved"
     assert parsed.device == "cpu"
+
+
+def test_prepare_review_cli_imports_without_replacing_drafts(tmp_path, monkeypatch, capsys):
+    from threadlens import cli
+    from threadlens.storage.annotations import AnnotationStore
+
+    config = Settings(root=tmp_path)
+    config.local.mkdir()
+    source = config.local / "labeled.jsonl"
+    record = {
+        "comment_id": "synthetic-1",
+        "text": "Could you explain this test?",
+        "label": "request",
+        "provenance": "synthetic_demo",
+    }
+    source.write_text(json.dumps(record) + "\n")
+    monkeypatch.setattr(cli, "settings", config)
+    monkeypatch.setattr("sys.argv", ["threadlens", "prepare-review"])
+    cli.main()
+    assert json.loads(capsys.readouterr().out)["inserted"] == 1
+    record["label"] = "commentary"
+    source.write_text(json.dumps(record) + "\n")
+    cli.main()
+    assert json.loads(capsys.readouterr().out)["inserted"] == 0
+    assert (
+        AnnotationStore(config.database).history("synthetic-1", blind=False)["draft"]["label"]
+        == "request"
+    )
+
+
+def test_stop_refuses_reused_pid_without_signaling(tmp_path, monkeypatch):
+    from threadlens import launcher
+
+    monkeypatch.setattr(launcher, "settings", Settings(root=tmp_path))
+    path = launcher._state_path(8000, 8501)
+    path.parent.mkdir()
+    path.write_text(json.dumps({"pid": 12345, "identity": "old start time and command"}))
+    monkeypatch.setattr(launcher, "_process_identity", lambda pid: "different unrelated process")
+    signals = []
+    monkeypatch.setattr(launcher.os, "kill", lambda *args: signals.append(args))
+    with pytest.raises(RuntimeError, match="no signal was sent"):
+        launcher.stop()
+    assert signals == []
+
+
+def test_stop_targets_matching_launcher_only(tmp_path, monkeypatch, capsys):
+    from threadlens import launcher
+
+    monkeypatch.setattr(launcher, "settings", Settings(root=tmp_path))
+    path = launcher._state_path(8000, 8501)
+    path.parent.mkdir()
+    path.write_text(json.dumps({"pid": 12345, "identity": "fixed identity"}))
+    monkeypatch.setattr(launcher, "_process_identity", lambda pid: "fixed identity")
+    signals = []
+
+    def terminate(pid, sig):
+        signals.append((pid, sig))
+        path.unlink()
+
+    monkeypatch.setattr(launcher.os, "kill", terminate)
+    launcher.stop()
+    assert signals == [(12345, launcher.signal.SIGTERM)]
+    assert "Stopped" in capsys.readouterr().out

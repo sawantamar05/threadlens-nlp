@@ -88,7 +88,7 @@ def label_dataset(*, device: str = "auto", batch_size: int = 12) -> dict:
                     "Source text changed for an already weak-labeled item; version the dataset."
                 )
             continue
-        tokens = tokenizer.encode(record["text"], add_special_tokens=False)
+        tokens = tokenizer.encode(record["text"], add_special_tokens=False, verbose=False)
         windows = [tokens[start : start + 384] for start in range(0, len(tokens), 352)]
         premises = [tokenizer.decode(window, skip_special_tokens=True) for window in windows]
         pairs = [(premise, HYPOTHESES[label]) for premise in premises for label in LABELS]

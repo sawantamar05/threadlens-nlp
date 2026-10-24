@@ -2,12 +2,14 @@
 
 from __future__ import annotations
 
+import json
 import os
 import signal
 import socket
 import subprocess
 import sys
 import time
+from pathlib import Path
 
 import httpx
 
@@ -24,6 +26,45 @@ def check_port(port: int) -> None:
             raise RuntimeError(
                 f"Port {port} is unavailable. Use --api-port / --ui-port; no existing process was stopped."
             ) from exc
+
+
+def _process_identity(pid: int) -> str:
+    result = subprocess.run(
+        ["ps", "-p", str(pid), "-o", "lstart=", "-o", "command="],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return result.stdout.strip() if result.returncode == 0 else ""
+
+
+def _state_path(api_port: int, ui_port: int) -> Path:
+    return settings.local / f"launcher-{api_port}-{ui_port}.json"
+
+
+def stop(api_port: int = 8000, ui_port: int = 8501) -> None:
+    """Signal only the recorded launcher, checking start time and command against PID reuse."""
+    path = _state_path(api_port, ui_port)
+    if not path.is_file():
+        raise RuntimeError(
+            "No recorded ThreadLens launcher for these ports. Use the same ports/root as serve."
+        )
+    state = json.loads(path.read_text())
+    pid = state.get("pid", 0)
+    identity = state.get("identity", "")
+    if type(pid) is not int or pid <= 1 or not identity or _process_identity(pid) != identity:
+        raise RuntimeError(
+            "Launcher record is stale or does not match the process; no signal was sent."
+        )
+    os.kill(pid, signal.SIGTERM)
+    for _ in range(100):
+        if not path.exists() or _process_identity(pid) != identity:
+            print("Stopped the recorded ThreadLens launcher and its child services.")
+            return
+        time.sleep(0.1)
+    raise RuntimeError(
+        "Launcher has not finished shutdown; inspect its logs. No other process was signaled."
+    )
 
 
 def serve(api_port: int = 8000, ui_port: int = 8501, demo: bool = False) -> None:
@@ -46,6 +87,7 @@ def serve(api_port: int = 8000, ui_port: int = 8501, demo: bool = False) -> None
     children: list[subprocess.Popen] = []
     streams = []
     previous = {}
+    state_path = _state_path(api_port, ui_port)
 
     def interrupted(signum, frame):
         raise KeyboardInterrupt
@@ -103,8 +145,12 @@ def serve(api_port: int = 8000, ui_port: int = 8501, demo: bool = False) -> None
                     raise RuntimeError(f"API startup timed out; inspect {logs / 'api.log'}")
                 ready = httpx.get(f"http://127.0.0.1:{api_port}/ready", timeout=120)
                 print(f"Model readiness ({ready.status_code}): {ready.text}", flush=True)
+        state_path.parent.mkdir(parents=True, exist_ok=True)
+        state_path.write_text(
+            json.dumps({"pid": os.getpid(), "identity": _process_identity(os.getpid())})
+        )
         print(
-            f"ThreadLens {'SYNTHETIC DEMO' if demo else 'LOCAL'}\nAPI: http://127.0.0.1:{api_port}\nDocs: http://127.0.0.1:{api_port}/docs\nUI: http://127.0.0.1:{ui_port}\nLogs: {logs}\nCtrl+C stops both services.",
+            f"ThreadLens {'SYNTHETIC DEMO' if demo else 'LOCAL'}\nAPI: http://127.0.0.1:{api_port}\nDocs: http://127.0.0.1:{api_port}/docs\nUI: http://127.0.0.1:{ui_port}\nLogs: {logs}\nCtrl+C or threadlens stop --api-port {api_port} --ui-port {ui_port} stops both services.",
             flush=True,
         )
         while all(child.poll() is None for child in children):
@@ -124,5 +170,13 @@ def serve(api_port: int = 8000, ui_port: int = 8501, demo: bool = False) -> None
                 child.wait(timeout=5)
         for stream in streams:
             stream.close()
+        try:
+            if (
+                state_path.is_file()
+                and json.loads(state_path.read_text()).get("pid") == os.getpid()
+            ):
+                state_path.unlink()
+        except (OSError, ValueError):
+            pass
         for sig, handler in previous.items():
             signal.signal(sig, handler)
