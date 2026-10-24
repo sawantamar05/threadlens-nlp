@@ -2,11 +2,11 @@
 
 ## Current state
 
-Engineering and local verification are complete. Final selected local model: `distilbert-improved-seed 42`. Main services use loopback API 8000 / UI 8501; the isolated synthetic demo is separate. Publication and remote CI verification are the final actions.
+Engineering, local verification, and public GitHub publication are complete. Repository: https://github.com/sawantamar05/threadlens-nlp. Verified initial implementation commit `f9da0772647ab7ec87c8f64e1324e06038b73973` matched local and remote main; [GitHub Actions run 40130972332](https://github.com/sawantamar05/threadlens-nlp/actions/runs/40130972332) passed lint, formatting, CPU tests and offline demo rebuild. Final selected local model: `distilbert-improved-seed 42`. Main services use loopback API 8000 / UI 8501; the isolated synthetic demo is separate. Local API, readiness, API docs and UI health returned HTTP 200. Current CI status is available from the repository Actions page.
 
 ## Completed work
 
-- Inspected Apple M3, 16 GB RAM, 8 CPU cores, macOS 26.6.2, Python 3.11.0 and approximately 19 GiB available disk. Confirmed MPS outside the restricted sandbox. No ancestor AGENTS.md; destination was absent and outside existing Git repositories. GitHub authenticated as sawantamar05 and requested name was absent. The protected CodePath directory has not been opened or modified.
+- Inspected Apple M3, 16 GB RAM, 8 CPU cores, macOS 26.6.2, Python 3.11.0 and approximately 19 GiB available disk. Confirmed MPS outside the restricted sandbox. No ancestor AGENTS.md; destination was absent and outside existing Git repositories. GitHub authenticated as sawantamar05 and requested name was absent. Protected CodePath files were not read, copied or modified.
 - Created an isolated environment with full and lightweight dependency locks. Implemented installable package, centralized configuration, six-screen Streamlit UI, typed FastAPI API, cached inference, SQLite collection/review state, safe CSV processing, original synthetic demo and process-safe launcher/stop commands.
 - Fresh official HN retrieval: 720 complete English comments / 36 discussions / at most 20 per discussion. Full source texts stay local. Automatically generated NLI weak labels: 206 analysis / 54 request / 460 commentary; no counts forced.
 - Froze 500/100/120 comments in 25/5/6 disjoint story groups. Four validation and eight test requests limit minority estimates. Implemented ID/hash replay with changed/deleted-source refusal and pinned pretrained source revisions.
@@ -37,4 +37,6 @@ Cold AppTest imports exceeded the initial 3-second test budget; 30 seconds and s
 
 All benchmark labels are unreviewed weak labels. There is no independent human benchmark, calibrated confidence, production deployment or demonstrated user/business impact. Source edits/deletions may prevent exact replay. Minority support is small; topic/English/length sampling bias, parent-context dependence, truncation and teacher errors remain.
 
-Exact next action: inspect staged content/ignored paths and credential patterns, commit measured reports/screenshots/documentation, create new public `sawantamar05/threadlens-nlp`, push main, verify remote HEAD/files/images and GitHub Actions. Then record final publication status here. No further model search or relabeling is planned.
+No engineering or publication dependency remains. The new public repository contains the source, locks, reports, docs and 19 actual screenshots; description/topics and main branch are configured. The publication scan found no credentials, raw comments, local databases, virtual environments or model weights among the tracked files. Local and remote implementation HEADs matched, required files/images were fetched through GitHub, and CI passed.
+
+Exact next action for use: open http://127.0.0.1:8501. To restart from this checkout, run `.venv/bin/threadlens stop` then `.venv/bin/threadlens serve`. This preserves trained local artifacts and review history. Future model-quality work is a separately versioned independently blind-labeled benchmark; no further search or relabeling was used to alter these published results.

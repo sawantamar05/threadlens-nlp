@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/sawantamar05/threadlens-nlp",
+  "public": true,
+  "default_branch": "main",
+  "verified_implementation_head": "f9da0772647ab7ec87c8f64e1324e06038b73973",
+  "local_and_remote_match": true,
+  "required_files_visible": true,
+  "actual_screenshots_visible": 19,
+  "description_configured": true,
+  "topics_configured": 9,
+  "credential_local_data_large_artifact_scan": {
+    "files": 97,
+    "issues": 0
+  },
+  "ci": {
+    "run_id": 40130972332,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/sawantamar05/threadlens-nlp/actions/runs/40130972332",
+    "checks": [
+      "locked lightweight installation",
+      "Ruff",
+      "formatting",
+      "CPU tests",
+      "offline demonstration rebuild and reload"
+    ]
+  }
+}

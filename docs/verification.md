@@ -1,6 +1,6 @@
 # Actual verification
 
-The user story is: browser input → Streamlit HTTP client → typed FastAPI routes → local inference, public source retrieval or SQLite → rendered results and downloadable reports. Checks below were actually executed on the inspected Mac; CI status is checked separately after publication.
+The user story is: browser input → Streamlit HTTP client → typed FastAPI routes → local inference, public source retrieval or SQLite → rendered results and downloadable reports. Checks below were actually executed on the inspected Mac; The public GitHub Actions run also passed lint, formatting, CPU tests and offline demo rebuild; see the publication evidence below.
 
 | Boundary / workflow | Evidence |
 |---|---|
@@ -27,3 +27,9 @@ Screenshots and browser evidence live in `docs/images/` and `reports/browser_*_c
 - Cache-invalidating artifact checks, both label mappings, SQLite closure, score validation and cross-screen suggestion exposure were hardened with regression tests.
 
 A benign upstream Starlette TestClient/httpx deprecation warning remains in local tests; it does not affect the checked behavior. There is no independent human benchmark. The preregistered macro F1 target was missed, and no additional search was run to conceal that result.
+
+## Publication evidence
+
+New public repository: [sawantamar05/threadlens-nlp](https://github.com/sawantamar05/threadlens-nlp), default branch `main`, configured description and nine relevant topics. The reviewed implementation commit `f9da0772647ab7ec87c8f64e1324e06038b73973` matched the pushed commit. Required source files, reports, locks, docs, and all 19 actual screenshots were verified through the GitHub API. A credential/large-artifact/local-data scan of 97 tracked files found no flagged items.
+
+[CI run 40130972332](https://github.com/sawantamar05/threadlens-nlp/actions/runs/40130972332) completed successfully, including the CPU-compatible test suite and offline synthetic demonstration rebuild/reload. Subsequent handoff documentation updates use the same workflow; the repository Actions page shows current checks.
