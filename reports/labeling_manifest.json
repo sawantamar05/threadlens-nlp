@@ -1,0 +1,30 @@
+{
+  "count": 720,
+  "label_counts": {
+    "request": 54,
+    "commentary": 460,
+    "analysis": 206
+  },
+  "provenance": "weak_label",
+  "review_status": "unreviewed",
+  "labeler": {
+    "model_id": "cross-encoder/nli-distilroberta-base",
+    "revision": "b14d131f9d32668a5e6a982729b57ff6ed5dfcbd",
+    "taxonomy_version": "threadlens-taxonomy-v1",
+    "hypothesis_template": "direct NLI premise/hypothesis",
+    "hypotheses": {
+      "analysis": "The author's primary contribution is a substantive claim supported by a concrete observation, comparison, measurement, relevant quotation, or explanatory mechanism.",
+      "request": "The author's primary contribution is a genuine request for other participants to provide information, clarification, advice, validation, or action.",
+      "commentary": "The author's primary contribution is an opinion, reaction, joke, unsupported assertion, or resource share without a genuine request or a supported claim."
+    },
+    "max_length": 512,
+    "premise_window_tokens": 384,
+    "overlap_tokens": 32,
+    "window_aggregation": "mean entailment logits, softmax across taxonomy hypotheses",
+    "created_at": "2026-10-24T20:04:11.798948+00:00",
+    "license": "apache-2.0",
+    "provenance": "weak_label"
+  },
+  "independent_semantic_validation": "unmeasured",
+  "device": "mps"
+}

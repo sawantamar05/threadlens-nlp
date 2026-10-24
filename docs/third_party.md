@@ -1,0 +1,10 @@
+# Sources, licenses, and assistance
+
+Original ThreadLens code, synthetic fixtures, and documentation: MIT, Amar Sawant (2026).
+
+- Hacker News [official API](https://github.com/HackerNews/API): public item retrieval from `hacker-news.firebaseio.com/v0`. API documentation code is MIT. That license does not automatically license user-authored comments. Raw comment text, usernames, annotation notes and caches are excluded from public Git; publish identifiers and aggregate metrics only. [HN guidelines](https://news.ycombinator.com/newsguidelines.html) and [terms](https://www.ycombinator.com/legal/) apply to source access.
+- [DistilBERT base uncased](https://huggingface.co/distilbert/distilbert-base-uncased): Apache 2.0, canonical namespace `distilbert/distilbert-base-uncased`; downstream fine-tuned weights are local and not distributed in this repository. Model revision is recorded per run.
+- [NLI DistilRoBERTa](https://huggingface.co/cross-encoder/nli-distilroberta-base): Apache 2.0, weak-label teacher trained on SNLI/MultiNLI. Its annotations are automatically generated and unverified. This teacher is not evaluated against its own labels as a baseline.
+- [PyTorch MPS documentation](https://docs.pytorch.org/docs/stable/notes/mps.html), [Transformers classification recipe](https://huggingface.co/docs/transformers/v4.57.6/en/tasks/sequence_classification), [scikit-learn grouped splitting](https://scikit-learn.org/stable/modules/cross_validation.html#group-shuffle-split), [FastAPI](https://fastapi.tiangolo.com/), and [Streamlit](https://docs.streamlit.io/) informed the implementation. Dependencies retain their licenses; the lock file records tested versions.
+
+Implementation, synthetic demonstration writing, testing, experiments, and documentation were assisted by OpenAI Codex at Amar Sawant's request. AI-created labels and agent-driven UI review are never represented as independent human ground truth. No course starter code, data, labels, checkpoints, results or Git history were used.
